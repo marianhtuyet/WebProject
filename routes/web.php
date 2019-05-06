@@ -31,7 +31,6 @@ Route::get('hp/category_hp_1', 'IndexController@getCategory_hp_1')->name('hp.cat
 Route::get('hp/category_hp_pavilion', 'IndexController@getCategory_hp_pavilion')->name('hp.category_hp_pavilion');
 Route::get('hp/category_hp_probook', 'IndexController@getCategory_hp_probook')->name('hp.category_hp_probook');
 
-Route::get()
 
 Route::get('product/list_product', 'IndexController@getListProduct')->name('product.list_product');
 
