@@ -71,4 +71,12 @@ class IndexController extends Controller
         return view('product.list_product', compact('index'));
     }
 
+
+    public  function  getdetail(Request $request)
+    {
+        $detail=Products::where('id', $request->id)->first();
+        return view('category.detail', compact('detail'));
+    }
+
+
 }

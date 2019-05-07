@@ -39,3 +39,6 @@ Route::get('product/list_product', 'IndexController@getListProduct')->name('prod
 Route::get('trangchu/demo', function (){
     return view('trangchu/demo');
 });
+
+
+Route::get('category/detail/{id}', 'IndexController@getdetail')->name('category.detail');
