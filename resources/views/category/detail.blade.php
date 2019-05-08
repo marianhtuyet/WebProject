@@ -8,6 +8,9 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-lg-3 order-2 order-lg-1">
+                @include('layout.menu')
+            </div>
             <div class="col-lg-9 order-1 order-lg-2">
                 <div id="productMain" class="row">
                     <div class="col-md-6">
@@ -15,7 +18,7 @@
 
                             @for($i=1; $i<4;  $i++)
 
-                            <div class="item"> <img src='assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg' alt="" class="img-fluid"></div>
+                            <div class="item"> <img src='assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg' alt="" class="img-fluid" style="height: 350px;"></div>
                             @endfor
 
                             {{--<div class="item"> <img src="img/detailbig2.jpg" alt="" class="img-fluid"></div>--}}
@@ -31,14 +34,6 @@
                             <div class="ribbon-background"></div>
                         </div>
                         <!-- /.ribbon-->
-                    </div>
-                    <div class="col-md-6">
-                        <div class="box">
-                            <h1 class="text-center">{{$detail->name}}</h1>
-                            <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
-                            <p class="price">{{$detail->cost}}</p>
-                            <p class="text-center buttons"><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a><a href="basket.html" class="btn btn-outline-primary"><i class="fa fa-heart"></i> Add to wishlist</a></p>
-                        </div>
                         <div data-slider-id="1" class="owl-thumbs">
                             @for($i=1; $i<4;  $i++)
                                 <button class="owl-thumb-item"><img src="assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg" alt="" class="img-fluid"></button>
@@ -47,6 +42,15 @@
                             {{--<button class="owl-thumb-item"><img src="img/detailsquare2.jpg" alt="" class="img-fluid"></button>--}}
                             {{--<button class="owl-thumb-item"><img src="img/detailsquare3.jpg" alt="" class="img-fluid"></button>--}}
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h3 class="text-center">{{$detail->name}}</h3>
+                            <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
+                            <p class="price">{{$detail->cost}}</p>
+                            <p class="text-center buttons"><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a><a href="basket.html" class="btn btn-outline-primary"><i class="fa fa-heart"></i> Add to wishlist</a></p>
+                        </div>
+
                     </div>
                 </div>
                 <div id="details" class="box">
