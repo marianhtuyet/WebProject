@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/.idea/QuanLyPhongKham.iml" filepath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/.idea/QuanLyPhongKham.iml" />
+      <module fileurl="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/.idea/TH.iml" filepath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/.idea/TH.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/WebProject.iml" filepath="$PROJECT_DIR$/.idea/WebProject.iml" />
     </modules>
   </component>

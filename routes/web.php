@@ -42,3 +42,7 @@ Route::get('trangchu/demo', function (){
 
 
 Route::get('category/detail/{id}', 'IndexController@getdetail')->name('category.detail');
+
+Route::get('category/basket/{id}', 'IndexController@addToCart')->name('category.basket');
+
+Route::get('category/basket','IndexController@getBasket')->name('basket.get');

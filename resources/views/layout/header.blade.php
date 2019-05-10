@@ -1,5 +1,6 @@
 
 
+
 <div id="top">
     <div class="container">
         <div class="row">
@@ -47,7 +48,9 @@
             <span class="sr-only">3 O'clock - go to homepage</span></a>
         <div class="navbar-buttons">
             <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
-            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
+            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i>
+            </button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler">
+                <i class="fa fa-shopping-cart"></i></a>
         </div>
         <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
@@ -161,8 +164,16 @@
             </ul>
             <div class="navbar-buttons d-flex justify-content-end">
                 <!-- /.nav-collapse-->
-                <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
-                <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>Giỏ hàng</span></a></div>
+                <div id="search-not-mobile" class="navbar-collapse collapse"></div>
+                <a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block">
+                    <span class="sr-only">Toggle search</span><i class="fa fa-search"></i>
+                </a>
+                <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block">
+                    <a href="{{route('basket.get')}}" class="btn btn-primary navbar-btn">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

@@ -96,5 +96,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="TH" />
+    <orderEntry type="module" module-name="QuanLyPhongKham" />
   </component>
 </module>
