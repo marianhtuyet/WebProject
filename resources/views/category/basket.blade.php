@@ -34,9 +34,9 @@
                                     <td>
                                     <input type="number" value="{{$value["item_quality"]}}" class="form-control">
                                     </td>
-                                    <td>{{$value["item_cost"]}}vnd</td>
+                                    <td>{{number_format($value["item_cost"],2)}}vnd</td>
                                     <td>{{number_format($value["item_quality"] * $value["item_cost"], 2)}}vnd</td>
-                                    <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    <td><a href="{{route('basket.remove', [$value["item_id"]])}}"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>
                                    @endforeach
                                @endif

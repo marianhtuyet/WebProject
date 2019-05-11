@@ -13,7 +13,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li aria-current="page" class="breadcrumb-item active">Acer</li>
+                        <li aria-current="page" class="breadcrumb-item active">Asus</li>
                     </ol>
                 </nav>
             </div>
@@ -21,7 +21,7 @@
 
             <div class="col-lg-9">
                 <div class="box">
-                    <h1>Laptop Acer</h1>
+                    <h1>Laptop Asus FX</h1>
                 </div>
 
                 <div class="row products">

@@ -12,10 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('trangchu/index');
+    return view('trangchu.index');
 }); //bien dau tien ddos laf duong dan
 
-//Route::get('customer/list','CustomerController@getList')->name('customer.list');
  Route::get('trangchu/index', 'IndexController@getList')->name('trangchu.index');
  Route::get('category/category', 'IndexController@getcategory')->name('category.category');
 
@@ -29,6 +28,23 @@ Route::get('asus/category_asus_vivo', 'IndexController@getCategory_asus_vivo')->
 
 Route::get('hp/category_hp_1', 'IndexController@getCategory_hp_1')->name('hp.category_hp_1');
 Route::get('hp/category_hp_pavilion', 'IndexController@getCategory_hp_pavilion')->name('hp.category_hp_pavilion');
+Route::get('hp/category_hp_probook', 'IndexController@getCategory_hp_probook')->name('hp.category_hp_probook');
+
+
+Route::get('dell/category_dell_inspiron', 'IndexController@getCategory_dell_inspiron')->name('dell.category_dell_inspiron');
+Route::get('dell/category_dell_vostro', 'IndexController@getCategory_dell_vostro')->name('dell.category_dell_vostro');
+
+
+Route::get('lenovo/category_lenovo_ideapad', 'IndexController@getCategory_lenovo_ideapad')->name('lenovo.category_lenovo_ideapad');
+Route::get('lenovo/category_lenovo_legion', 'IndexController@getCategory_lenovo_legion')->name('lenovo.category_lenovo_legion');
+Route::get('lenovo/category_lenovo_thinkpad', 'IndexController@getCategory_lenovo_thinkpad')->name('lenovo.category_lenovo_thinkpad');
+
+Route::get('macbook/category_macbook_pro', 'IndexController@getCategory_macbook_pro')->name('macbook.category_macbook_pro');
+Route::get('macbook/category_macbook_nomal', 'IndexController@getCategory_macbook_normal')->name('macbook.category_macbook_nomal');
+Route::get('macbook/category_macbook_air', 'IndexController@getCategory_macbook_air')->name('macbook.category_macbook_air');
+
+
+
 Route::get('hp/category_hp_probook', 'IndexController@getCategory_hp_probook')->name('hp.category_hp_probook');
 
 
@@ -46,3 +62,5 @@ Route::get('category/detail/{id}', 'IndexController@getdetail')->name('category.
 Route::get('category/basket/{id}', 'IndexController@addToCart')->name('category.basket');
 
 Route::get('category/basket','IndexController@getBasket')->name('basket.get');
+//
+Route::get('basket/remove/{id}', 'IndexController@RemoveProduct')->name('basket.remove');

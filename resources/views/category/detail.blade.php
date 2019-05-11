@@ -36,12 +36,10 @@
                             @for($i=1; $i<4;  $i++)
                                 <button class="owl-thumb-item"><img src="assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg" alt="" class="img-fluid"></button>
                             @endfor
-                            <button class="owl-thumb-item"><img src="img/detailsquare3.jpg" alt="" class="img-fluid"></button>--}}
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="box">
-                            <form method="post" action="detail.blade.php?action=add&id={{$detail->id}}">
 
                             <h3 class="text-center">{{$detail->name}}</h3>
                             <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
@@ -57,7 +55,6 @@
                                     <i class="fa fa-heart"></i> Add to wishlist
                                 </a>
                             </p>
-                            </form>
 
                         </div>
 

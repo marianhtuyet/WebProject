@@ -5,7 +5,7 @@
     </div>
     <div class="card-body">
         <ul class="nav nav-pills flex-column category-menu">
-            <li><a href="category/category" class="nav-link active">Laptop Acer</a>
+            <li><a href="{{route('acer.category_acer_nitro')}}" class="nav-link active">Laptop Acer</a>
                 <ul class="list-unstyled">
                     <li ><a href="{{route('acer.category_acer_nitro')}}" class="nav-link" id="acer_1">Nitro series</a></li>
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link" id="acer_2">Predator series</a></li>

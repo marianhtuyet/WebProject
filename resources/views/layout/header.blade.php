@@ -43,18 +43,18 @@
 
 </div>
 <nav class="navbar navbar-expand-lg">
-    <div class="container"><a href="trangchu/index" class="navbar-brand home"><img src="assets/img_new/logo.png" alt="3 O'clock logo" class="d-none d-md-inline-block">
+    <div class="container"><a href="{{route('trangchu.index')}}" class="navbar-brand home"><img src="assets/img_new/logo.png" alt="3 O'clock logo" class="d-none d-md-inline-block">
             <img src="assets/img_new/logo.png" alt="3 O'Clock logo" class="d-inline-block d-md-none">
             <span class="sr-only">3 O'clock - go to homepage</span></a>
         <div class="navbar-buttons">
             <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
             <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i>
-            </button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler">
+            </button><a href="{{route('basket.get')}}" class="btn btn-outline-secondary navbar-toggler">
                 <i class="fa fa-shopping-cart"></i></a>
         </div>
         <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="category/category" class="nav-link active">Trang chủ</a></li>
+                <li class="nav-item"><a href="{{route('trangchu.index')}}" class="nav-link active">Trang chủ</a></li>
                 <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Laptop - Macbook<b class="caret"></b></a>
                     <ul class="dropdown-menu megamenu">
                         <li>
@@ -62,48 +62,48 @@
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Laptop Acer</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category/category" class="nav-link">Nitro series</a></li>
-                                        <li class="nav-item"><a href="category/category_acer_predator" class="nav-link">Predator series</a></li>
-                                        <li class="nav-item"><a href="ccategory/category_acer_swift" class="nav-link">Swift series</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Nitro series</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Predator series</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_swift')}}" class="nav-link">Swift series</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Laptop Asus</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">ROG series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">FX/TUF series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Vivobook series</a></li>
+                                        <li class="nav-item"><a href="{{route('asus.category_asus_rog')}}" class="nav-link">ROG series</a></li>
+                                        <li class="nav-item"><a href="{{route('asus.category_asus_fx')}}" class="nav-link">FX/TUF series</a></li>
+                                        <li class="nav-item"><a href="{{route('asus.category_asus_vivo')}}" class="nav-link">Vivobook series</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Laptop Dell</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category-Dell-Inspiron.html" class="nav-link">Inspiron series</a></li>
-                                        <li class="nav-item"><a href="category-Dell-Vostro.html" class="nav-link">Vostro series</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Inspiron series</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Vostro series</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Laptop HP</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Probook series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Pavilion series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">14/15 series</a></li>
+                                        <li class="nav-item"><a href="{{route('hp.category_hp_probook')}}" class="nav-link">Probook series</a></li>
+                                        <li class="nav-item"><a href="{{route('hp.category_hp_pavilion')}}" class="nav-link">Pavilion series</a></li>
+                                        <li class="nav-item"><a href="{{route('hp.category_hp_1')}}" class="nav-link">14/15 series</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Laptop Lenovo</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Legion series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Thinkpad series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Ideapad series</a></li>
+                                        <li class="nav-item"><a href="{{route('lenovo.category_lenovo_legion')}}" class="nav-link">Legion series</a></li>
+                                        <li class="nav-item"><a href="{{route('lenovo.category_lenovo_thinkpad')}}" class="nav-link">Thinkpad series</a></li>
+                                        <li class="nav-item"><a href="{{route('lenovo.category_lenovo_ideapad')}}" class="nav-link">Ideapad series</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Macbook</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Macbook series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Macbook Pro series</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Macbook Air series</a></li>
+                                        <li class="nav-item"><a href="{{route('macbook.category_macbook_nomal')}}" class="nav-link">Macbook series</a></li>
+                                        <li class="nav-item"><a href="{{route('macbook.category_macbook_pro')}}" class="nav-link">Macbook Pro series</a></li>
+                                        <li class="nav-item"><a href="{{route('macbook.category_macbook_air')}}l" class="nav-link">Macbook Air series</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
@@ -123,32 +123,32 @@
                                 <div class="col-md-6 col-lg-3">
                                     <h5>Card màn hình</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">GTX</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">MSI</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">RTX</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">GTX</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">MSI</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">RTX</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>CPU</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Core i5</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Core i7</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Core i9</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Core i5</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Core i7</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Core i9</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>HDD - SSD</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">HDD</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">SSD</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">HDD</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">SSD</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <h5>RAM</h5>
                                     <ul class="list-unstyled mb-3">
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Corsair</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Kingmax</a></li>
-                                        <li class="nav-item"><a href="category.html" class="nav-link">Kingston</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Corsair</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Kingmax</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}} " class="nav-link">Kingston</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
