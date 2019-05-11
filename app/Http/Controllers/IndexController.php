@@ -43,19 +43,19 @@ class IndexController extends Controller
     public function getCategory_asus_fx()
     {
         $product = Products::where('id_product', 'asus_3')->get();
-        return view('acer.category_acer_swift', compact('product'));
+        return view('asus.category_asus_fx', compact('product'));
     }
 
     public function getCategory_asus_rog()
     {
         $product = Products::where('id_product', 'asus_2')->get();
-        return view('acer.category_acer_swift', compact('product'));
+        return view('asus.category_asus_rog', compact('product'));
     }
 
     public function getCategory_asus_vivo()
     {
         $product = Products::where('id_product', 'asus_1')->get();
-        return view('acer.category_acer_swift', compact('product'));
+        return view('asus.category_asus_vivo', compact('product'));
     }
 
     public function getCategory_hp_1()
