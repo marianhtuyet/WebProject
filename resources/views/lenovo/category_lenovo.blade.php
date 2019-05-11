@@ -21,7 +21,7 @@
 
             <div class="col-lg-9">
                 <div class="box">
-                    <h1>Laptop Acer</h1>
+                    <h1>Laptop Lenovo</h1>
                 </div>
 
                 <div class="row products">

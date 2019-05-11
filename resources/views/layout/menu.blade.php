@@ -12,34 +12,34 @@
                     <li><a href="{{route('acer.category_acer_swift')}}" class="nav-link" id="acer_3">Swift series</a></li>
                 </ul>
             </li>
-            <li><a href="category.html" class="nav-link ">Laptop Asus</a>
+            <li><a href="{{route('asus.category_asus_rog')}}" class="nav-link ">Laptop Asus</a>
                 <ul class="list-unstyled">
                     <li><a href="{{route('asus.category_asus_rog')}}" class="nav-link" id="asus_1">ROG series</a></li>
                     <li><a href="{{route('asus.category_asus_fx')}}" class="nav-link" id="asus_2">FX_TUF series</a></li>
                     <li><a href="{{route('asus.category_asus_vivo')}}" class="nav-link" id="asus_3">Vivobook series</a></li>
                 </ul>
             </li>
-            <li><a href="category-Dell.html" class="nav-link">Laptop Dell</a>
+            <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Laptop Dell</a>
                 <ul class="list-unstyled">
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Inspiron series</a></li>
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Vostro series</a></li>
                 </ul>
             </li>
-            <li><a href="category.html" class="nav-link">Laptop HP</a>
+            <li><a href="{{route('hp.category_hp_probook')}}" class="nav-link">Laptop HP</a>
                 <ul class="list-unstyled">
                     <li><a href="{{route('hp.category_hp_probook')}}" class="nav-link">Probook series</a></li>
                     <li><a href="{{route('hp.category_hp_pavilion')}}" class="nav-link">Pavilion series</a></li>
                     <li><a href="{{route('hp.category_hp_1')}}" class="nav-link">14/15 series</a></li>
                 </ul>
             </li>
-            <li><a href="category.html" class="nav-link">Laptop Lenovo</a>
+            <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Laptop Lenovo</a>
                 <ul class="list-unstyled">
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Legion series</a></li>
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Thinkpad series</a></li>
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Ideapad series</a></li>
                 </ul>
             </li>
-            <li><a href="category.html" class="nav-link">Macbook</a>
+            <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Macbook</a>
                 <ul class="list-unstyled">
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Macbook series</a></li>
                     <li><a href="{{route('acer.category_acer_predator')}}" class="nav-link">Macbook Pro series</a></li>

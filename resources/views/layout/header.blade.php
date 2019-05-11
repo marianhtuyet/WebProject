@@ -149,6 +149,7 @@
                                         <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Corsair</a></li>
                                         <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}}" class="nav-link">Kingmax</a></li>
                                         <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}} " class="nav-link">Kingston</a></li>
+                                        <li class="nav-item"><a href="{{route('acer.category_acer_nitro')}} " class="nav-link">Kingston</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
