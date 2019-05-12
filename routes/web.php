@@ -64,3 +64,5 @@ Route::get('category/basket/{id}', 'IndexController@addToCart')->name('category.
 Route::get('category/basket','IndexController@getBasket')->name('basket.get');
 //
 Route::get('basket/remove/{id}', 'IndexController@RemoveProduct')->name('basket.remove');
+
+Route::post('basket/updatecard','IndexController@updateCard')->name('basket.updatecard');

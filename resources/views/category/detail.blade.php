@@ -43,7 +43,7 @@
 
                             <h3 class="text-center">{{$detail->name}}</h3>
                             <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
-                            <p class="price">{{$detail->cost}}</p>
+                            <p class="price">{{number_format($detail->cost, 0)}}đ</p>
 
 
                             <p class="text-center buttons">

@@ -32,25 +32,25 @@
                             <div class="product">
                                 <div class="flip-container">
                                     <div class="flipper">
-                                        <div class="front"><a href="product/detail"><img
+                                        <div class="front"><a href="{{route('category.detail', [$value->id])}}"><img
                                                         src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg"
-                                                        alt="" class="img-fluid"></a></div>
-                                        <div class="back"><a href="product/detail"><img
+                                                        alt="{{$value->id_product}}_{{$key+1}}" class="img-fluid"></a></div>
+                                        <div class="back"><a href="{{route('category.detail', [$value->id])}}"><img
                                                         src="assets/img/{{$value->id_product}}_{{$key+1}}_2.jpg"
-                                                        alt="" class="img-fluid"></a></div>
+                                                        alt="{{$value->id_product}}_{{$key+1}}" class="img-fluid"></a></div>
                                     </div>
                                 </div>
-                                <a href="product/detail" class="invisible"><img src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg"
-                                                                                alt=""   class="img-fluid"></a>
+                                <a href="{{route('category.detail', [$value->id])}}" class="invisible"><img src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg"
+                                                                                                            alt=""   class="img-fluid"></a>
                                 <div class="text">
-                                    <h3><a href="product/detail">{{$value->name}}</a></h3>
+                                    <h3><a href="{{route('category.detail', [$value->id])}}">{{$value->name}}</a></h3>
                                     <p class="price">
                                         {{--<del>$value->cost đ</del>--}}
-                                        {{$value->cost}} đ
+                                        {{number_format($value->cost, 0)}}đ
                                     </p>
-                                    <p class="buttons"><a href="product/detail"
+                                    <p class="buttons"><a href="{{route('category.detail', [$value->id])}}"
                                                           class="btn btn-outline-secondary">View detail</a><a
-                                                href="basket.html" class="btn btn-primary"><i
+                                                href="{{route('category.basket', [$value->id])}}}" class="btn btn-primary"><i
                                                     class="fa fa-shopping-cart"></i>Add to cart</a></p>
                                 </div>
                                 <!-- /.text-->

@@ -171,10 +171,11 @@ class IndexController extends Controller
                 'item_quality' => 1,
                 'item_img' => $detail->id_product . '_' . $detail->id_type,
             );
-            echo '<script>alert("chhuaw có session")</script>';
+//            echo '<script>alert("chhuaw có session")</script>';
             $_SESSION["shopping_cart"][0] = $item_array;
         }
-        return view('category.detail', compact('detail'));
+        return redirect()->back();
+//        return view('category.detail', compact('detail'));
     }
 
     public function getBasket()
@@ -203,4 +204,20 @@ class IndexController extends Controller
         }
         return view('category.basket');
     }
+    public function updateCard(Request $request)
+    {
+//        foreach ($_SESSION["shopping_cart"] as $keys => $values) {
+//            if ($values["item_id"] == $request->id) {
+//                $_SESSION["shopping_cart"][$keys]["item_quality"] = $request->quality;
+//            }
+//        }
+        return view('category.basket');
+    }
 }
+
+
+
+//public function AddToCardCategory(Request $request)
+//{
+//
+//}

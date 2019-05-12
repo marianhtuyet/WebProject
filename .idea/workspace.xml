@@ -2,20 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4a73f0-5ffc-4f55-84d8-c39f529280e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/asus_3_1_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/asus_3_4_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dell/category_dell.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dell/category_dell.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook.blade.php" afterDir="false" />
       <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" afterDir="false" />
       <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" afterDir="false" />
       <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/layout/menu.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/layout/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_1_4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_1_5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_1_6_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_2_1_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/acer/category_acer_nitro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acer/category_acer_nitro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/basket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp_pavilion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp_pavilion.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp_probook.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp_probook.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,46 +44,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="393">
+              <caret line="63" column="75" lean-forward="true" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="1564">
+              <caret line="107" column="62" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout/menu.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="43" column="121" lean-forward="true" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="121" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="91" column="52" lean-forward="true" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
+            <state relative-caret-position="342">
+              <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
               <folding>
                 <element signature="e#59#76#0#PHP" expanded="true" />
               </folding>
@@ -77,18 +92,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="195">
+              <caret line="52" column="104" selection-start-line="52" selection-start-column="100" selection-end-line="52" selection-end-column="104" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442" />
+            <state relative-caret-position="-238">
+              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="83" column="92" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="82" column="58" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="58" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -103,14 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$valuerodu</find>
-      <find>acer.category_acer_nitro</find>
-      <find>$value</find>
-      <find>category_acer_predator</find>
-      <find>category_acer_swift</find>
-      <find>category_asus_fx</find>
-      <find>item</find>
-      <find>You may also like these products</find>
       <find>Coupon code</find>
       <find>class=&quot;fa fa-trash-o&quot;</find>
       <find>category.detail</find>
@@ -123,7 +153,6 @@
       <find>route</find>
       <find>detai</find>
       <find>print_r</find>
-      <find>basket.get</find>
       <find>bas</find>
       <find>getList</find>
       <find>lap</find>
@@ -133,9 +162,21 @@
       <find>category_macbook_air</find>
       <find>getCategory_asus_rog</find>
       <find>category_asus_rog</find>
+      <find>cont</find>
+      <find>back</find>
+      <find>You currently have 3 item(s) in your cart.</find>
+      <find>total</find>
+      <find>post</find>
+      <find>them-benhnhan.post</find>
+      <find>add to ca</find>
+      <find>basket.get</find>
+      <find>postThemBenhNhan</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\WebProject\resources\views\product</dir>
+      <dir>D:\AnhTuyet\BaiHoc\HK2_2018-2019\WEB\QuanLyPhongKham\app\Http\Controllers</dir>
+      <dir>D:\AnhTuyet\BaiHoc\HK2_2018-2019\WEB\QuanLyPhongKham\resources\views\index</dir>
+      <dir>D:\AnhTuyet\BaiHoc\HK2_2018-2019\WEB\QuanLyPhongKham\resources\views</dir>
       <dir>D:\xampp\htdocs\Web_Project\resources\views</dir>
     </dirStrings>
   </component>
@@ -150,8 +191,6 @@
         <option value="$PROJECT_DIR$/resources/views/product/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/trangchu/demo.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AcerController.php" />
-        <option value="$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/card/category_card.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/card/category_card_gtx.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/card/category_card_msi.blade.php" />
@@ -169,11 +208,20 @@
         <option value="$PROJECT_DIR$/resources/views/ram/category_ram_kingston.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/basket.html" />
+        <option value="$PROJECT_DIR$/resources/views/asus/category_asus.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dell/category_dell.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/lenovo/category_lenovo.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/hp/category_hp.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/acer/category_acer_nitro.blade.php" />
-        <option value="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php" />
-        <option value="$PROJECT_DIR$/resources/views/category/basket.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/category/detail.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php" />
@@ -182,20 +230,13 @@
         <option value="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/asus/category_asus.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dell/category_dell.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/lenovo/category_lenovo.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/hp/category_hp.blade.php" />
+        <option value="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/basket.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/menu.blade.php" />
       </list>
     </option>
   </component>
@@ -304,92 +345,155 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="acer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="asus" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="dell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="hp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="lenovo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="macbook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TH" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TH" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-shopping-cart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,7 +502,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -476,19 +580,21 @@
       <workItem from="1557532510058" duration="16098000" />
       <workItem from="1557588245784" duration="1244000" />
       <workItem from="1557590760709" duration="2493000" />
+      <workItem from="1557623370015" duration="2789000" />
+      <workItem from="1557665015255" duration="9008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163711000" />
+    <option name="totallyTimeSpent" value="175508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2473525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="PHP-CGI Server" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -532,14 +638,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/style.blue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2856" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
@@ -596,116 +694,14 @@
     </entry>
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/tbl_product.sql" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/art_to_cart/index.php" />
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php" />
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php" />
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/sua.blade.php" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/detail.html" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/basket.html" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/checkout1.html" />
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/category/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/hp/category_hp_pavilion.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/hp/category_hp_probook.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -723,67 +719,212 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="68" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/PhieuKhamController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/acer/category_acer_nitro.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="106" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="106" />
+        <state relative-caret-position="313">
+          <caret line="48" column="71" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        <state relative-caret-position="212">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="91" column="52" lean-forward="true" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
-          <folding>
-            <element signature="e#59#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="239">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="171">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/hp/category_hp_probook.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/hp/category_hp_pavilion.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="82" column="58" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="83" column="92" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="52" column="104" selection-start-line="52" selection-start-column="100" selection-end-line="52" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="107" column="62" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="43" column="121" lean-forward="true" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="121" />
+        <state relative-caret-position="393">
+          <caret line="63" column="75" lean-forward="true" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/menu.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+        <state relative-caret-position="42">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+          <folding>
+            <element signature="e#59#76#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
