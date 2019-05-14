@@ -66,7 +66,3 @@ Route::get('category/basket','IndexController@getBasket')->name('basket.get');
 Route::get('basket/remove/{id}', 'IndexController@RemoveProduct')->name('basket.remove');
 
 Route::post('basket/updatecard','IndexController@updateCard')->name('basket.updatecard');
-
-Route::get('checkout/checkout1', 'IndexController@getCheckout1')->name('checkout1.get');
-Route::get('checkout/checkout2', 'IndexController@getCheckout2')->name('checkout2.get');
-Route::get('checkout/checkout3', 'IndexController@getCheckout3')->name('checkout3.get');

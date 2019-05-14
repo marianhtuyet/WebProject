@@ -4,7 +4,29 @@
     <list default="true" id="dc4a73f0-5ffc-4f55-84d8-c39f529280e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_1_4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_1_5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_1_6_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Dell_2_1_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/acer/category_acer_nitro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acer/category_acer_nitro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acer/category_acer_predator.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acer/category_acer_swift.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_fx.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_rog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asus/category_asus_vivo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/basket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dell/category_dell_inspiron.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dell/category_dell_vostro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp_1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp_pavilion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp_pavilion.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hp/category_hp_probook.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hp/category_hp_probook.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_ideapad.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_legion.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lenovo/category_lenovo_thinkpad.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook_air.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" afterDir="false" />
       <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" afterDir="false" />
@@ -24,60 +46,123 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="969">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
+=======
+            <state relative-caret-position="393">
+              <caret line="63" column="75" lean-forward="true" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="75" />
+>>>>>>> parent of afd2a1d... checkout
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout1.blade.php">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="374">
               <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+=======
+            <state relative-caret-position="1564">
+              <caret line="107" column="62" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="62" />
+>>>>>>> parent of afd2a1d... checkout
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout2.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="73" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="73" />
+            <state relative-caret-position="382">
+              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout3.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
               <caret line="79" column="45" selection-start-line="78" selection-start-column="53" selection-end-line="79" selection-end-column="45" />
+=======
+        <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+              <folding>
+                <element signature="e#59#76#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> parent of afd2a1d... checkout
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="52" column="104" selection-start-line="52" selection-start-column="100" selection-end-line="52" selection-end-column="104" />
+>>>>>>> parent of afd2a1d... checkout
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="529">
               <caret line="246" column="3" selection-start-line="246" selection-start-column="3" selection-end-line="246" selection-end-column="3" />
+=======
+            <state relative-caret-position="-238">
+              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+>>>>>>> parent of afd2a1d... checkout
               <folding>
-                <element signature="e#59#76#0#PHP" expanded="true" />
+                <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="83" column="92" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="82" column="58" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> parent of afd2a1d... checkout
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -89,6 +174,19 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
+=======
+      <find>Coupon code</find>
+      <find>class=&quot;fa fa-trash-o&quot;</find>
+      <find>category.detail</find>
+      <find>ds-benhnhan.get</find>
+      <find>getDSBenhNhan</find>
+      <find>getsuaBenhNhan</find>
+      <find>redirect</find>
+      <find>form</find>
+      <find>ro</find>
+      <find>route</find>
+>>>>>>> parent of afd2a1d... checkout
       <find>detai</find>
       <find>print_r</find>
       <find>bas</find>
@@ -103,10 +201,16 @@
       <find>cont</find>
       <find>back</find>
       <find>You currently have 3 item(s) in your cart.</find>
+<<<<<<< HEAD
+=======
+      <find>total</find>
+      <find>post</find>
+>>>>>>> parent of afd2a1d... checkout
       <find>them-benhnhan.post</find>
       <find>add to ca</find>
       <find>basket.get</find>
       <find>postThemBenhNhan</find>
+<<<<<<< HEAD
       <find>post</find>
       <find>ajax</find>
       <find>ajax-ds-khambenh.get</find>
@@ -119,13 +223,15 @@
       <find>ChangeQuality</find>
       <find>quality</find>
       <find>total</find>
+=======
+>>>>>>> parent of afd2a1d... checkout
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\WebProject\resources\views\product</dir>
       <dir>D:\AnhTuyet\BaiHoc\HK2_2018-2019\WEB\QuanLyPhongKham\app\Http\Controllers</dir>
       <dir>D:\AnhTuyet\BaiHoc\HK2_2018-2019\WEB\QuanLyPhongKham\resources\views\index</dir>
-      <dir>D:\xampp\htdocs\Web_Project\resources\views</dir>
       <dir>D:\AnhTuyet\BaiHoc\HK2_2018-2019\WEB\QuanLyPhongKham\resources\views</dir>
+      <dir>D:\xampp\htdocs\Web_Project\resources\views</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -134,6 +240,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/resources/views/product/list_product.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/product/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/trangchu/demo.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AcerController.php" />
         <option value="$PROJECT_DIR$/resources/views/card/category_card.blade.php" />
@@ -180,11 +289,14 @@
         <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" />
         <option value="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/checkout/checkout1.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/basket.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/resources/views/checkout/checkout2.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/checkout/checkout3.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/category/basket.blade.php" />
+=======
+>>>>>>> parent of afd2a1d... checkout
       </list>
     </option>
   </component>
@@ -339,12 +451,53 @@
               <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="acer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="asus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="hp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="lenovo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of afd2a1d... checkout
             </path>
             <path>
               <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
               <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
@@ -352,6 +505,68 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="category" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="macbook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuanLyPhongKham" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TH" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TH" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-shopping-cart" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of afd2a1d... checkout
             </path>
           </expand>
           <select />
@@ -446,22 +661,34 @@
       <workItem from="1557590760709" duration="2493000" />
       <workItem from="1557623370015" duration="2789000" />
       <workItem from="1557665015255" duration="9008000" />
+<<<<<<< HEAD
       <workItem from="1557754603298" duration="4739000" />
       <workItem from="1557791996500" duration="7774000" />
       <workItem from="1557812035840" duration="5232000" />
+=======
+>>>>>>> parent of afd2a1d... checkout
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="193253000" />
+=======
+    <option name="totallyTimeSpent" value="175508000" />
+>>>>>>> parent of afd2a1d... checkout
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
+>>>>>>> parent of afd2a1d... checkout
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="PHP-CGI Server" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -474,7 +701,6 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32569557" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -506,6 +732,41 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_1_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_1_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_1_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_2_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_3_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_4_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_5_4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/img/acer_1_5_3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -529,6 +790,8 @@
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/art_to_cart/index.php" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/sua.blade.php" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/detail.html" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/basket.html" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/checkout1.html" />
     <entry file="file://$PROJECT_DIR$/resources/views/dell/category_dell.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -554,6 +817,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="68" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/PhieuKhamController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -683,14 +953,26 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
+=======
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="325">
+          <caret line="82" column="58" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="58" />
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php">
+>>>>>>> parent of afd2a1d... checkout
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="83" column="92" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" />
     <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php" />
@@ -728,19 +1010,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="21" column="73" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="73" />
+=======
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="52" column="104" selection-start-line="52" selection-start-column="100" selection-end-line="52" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="107" column="62" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="63" column="75" lean-forward="true" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+>>>>>>> parent of afd2a1d... checkout
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="529">
           <caret line="246" column="3" selection-start-line="246" selection-start-column="3" selection-end-line="246" selection-end-column="3" />
+=======
+        <state relative-caret-position="342">
+          <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+>>>>>>> parent of afd2a1d... checkout
           <folding>
             <element signature="e#59#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout3.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -755,6 +1087,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> parent of afd2a1d... checkout
   </component>
   <component name="masterDetails">
     <states>

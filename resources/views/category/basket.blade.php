@@ -11,8 +11,7 @@
         <div class="row">
             <div id="basket" class="col-lg-9">
                 <div class="box">
-                    <form method="post" action="{{route('checkout1.get')}}">
-                        {{csrf_field()}}
+                    <form method="post" action="checkout1.html">
                         <h1>Shopping cart</h1>
                         @if(!empty($_SESSION["shopping_cart"]))
                         <p class="text-muted">You currently have <?php echo count($_SESSION["shopping_cart"])?> item(s) in your cart.</p>
@@ -33,15 +32,19 @@
                                     alt="null"></td>
                                     <td>{{$value["item_name"]}}</td>
                                     <td>
-                                    <input name="quality" type="number" value="{{($value["item_quality"])}}" class="form-control" onchange="ChangeQuality(this.value)">
+                                    <input  type="number" value="{{$value["item_quality"]}}" class="form-control">
                                     </td>
+<<<<<<< HEAD
                                     <td ><span id="dg">{{number_format($value["item_cost"],0)}}</span> vnd</td>
                                     <td ><span id="tong1">{{number_format($value["item_quality"] * $value["item_cost"], 0)}}</span> vnd</td>
+=======
+                                    <td>{{number_format($value["item_cost"],0)}}vnd</td>
+                                    <td>{{number_format($value["item_quality"] * $value["item_cost"], 0)}}vnd</td>
+>>>>>>> parent of afd2a1d... checkout
                                     <td><a href="{{route('basket.remove', [$value["item_id"]])}}"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>
-                                    <?php $total=$total + ($value["item_quality"] * $value["item_cost"]);
-                                    ?>
                                    @endforeach
+<<<<<<< HEAD
 
                             <tr>
                                 <td colspan="4" align="right">Total</td>
@@ -53,6 +56,9 @@
 
                             </tr>
                                 @endif
+=======
+                               @endif
+>>>>>>> parent of afd2a1d... checkout
                             </table>
                         </div>
                         <!-- /.table-responsive-->
@@ -82,6 +88,7 @@
 @endsection
 @section('script-ori')
     {{--<-- co footer va cac thu vien js--}}
+<<<<<<< HEAD
     <script>
         function formatMoney(n, c, d, t) {
             var c = isNaN(c = Math.abs(c)) ? 2 : c,
@@ -119,6 +126,9 @@
             })*/
         }
     </script>
+=======
+
+>>>>>>> parent of afd2a1d... checkout
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
