@@ -206,14 +206,38 @@ class IndexController extends Controller
     }
     public function updateCard(Request $request)
     {
-//        foreach ($_SESSION["shopping_cart"] as $keys => $values) {
-//            if ($values["item_id"] == $request->id) {
-//                $_SESSION["shopping_cart"][$keys]["item_quality"] = $request->quality;
-//            }
-//        }
+        if (session_status() == PHP_SESSION_NONE) {
+            //session has not started
+            session_start();
+        }
+        if($request->ajax())
+        {
+            $key= $request->key;
+
+
+        }
+        foreach ($_SESSION["shopping_cart"] as $keys => $values) {
+
+
+                echo '<script>alert("'.$request->get('quality').'")</script>';
+        }
         return view('category.basket');
     }
+    public function getCheckout1()
+    {
+        return view('checkout.checkout1');
+    }
+    public function getCheckout2()
+    {
+        return view('checkout.checkout2');
+    }
+    public function getCheckout3()
+    {
+        return view('checkout.checkout3');
+    }
 }
+
+
 
 
 

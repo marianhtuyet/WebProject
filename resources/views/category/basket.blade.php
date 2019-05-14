@@ -11,7 +11,8 @@
         <div class="row">
             <div id="basket" class="col-lg-9">
                 <div class="box">
-                    <form method="post" action="checkout1.html">
+                    <form method="post" action="{{route('checkout1.get')}}">
+                        {{csrf_field()}}
                         <h1>Shopping cart</h1>
                         @if(!empty($_SESSION["shopping_cart"]))
                         <p class="text-muted">You currently have <?php echo count($_SESSION["shopping_cart"])?> item(s) in your cart.</p>
@@ -32,14 +33,24 @@
                                     alt="null"></td>
                                     <td>{{$value["item_name"]}}</td>
                                     <td>
-                                    <input  type="number" value="{{$value["item_quality"]}}" class="form-control">
+                                    <input name="quality" type="number" value="{{($value["item_quality"])}}" class="form-control" onchange="ChangeQuality(this.value)">
                                     </td>
-                                    <td>{{number_format($value["item_cost"],0)}}vnd</td>
-                                    <td>{{number_format($value["item_quality"] * $value["item_cost"], 0)}}vnd</td>
+                                    <td>{{number_format($value["item_cost"],0)}} vnd</td>
+                                    <td>{{number_format($value["item_quality"] * $value["item_cost"], 0)}} vnd</td>
                                     <td><a href="{{route('basket.remove', [$value["item_id"]])}}"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>
+                                    <?php $total=$total + ($value["item_quality"] * $value["item_cost"]);
+                                    ?>
                                    @endforeach
-                               @endif
+
+                            <tr>
+                                <td colspan="4" align="right">Total</td>
+                                <td colspan="2" >
+                                    <input name="total" id="total" value=" {{number_format($total, 0)}}">
+                                    {{number_format($total, 0)}} vnd </td>
+
+                            </tr>
+                                @endif
                             </table>
                         </div>
                         <!-- /.table-responsive-->
@@ -69,7 +80,24 @@
 @endsection
 @section('script-ori')
     {{--<-- co footer va cac thu vien js--}}
+    {{--<script>--}}
+        {{--function ChangeQuality(value)--}}
+        {{--{--}}
+            {{--var _quality= $("input[name='quality']").val();--}}
 
+            {{--$("input[name'total']").val=--}}
+            {{--// lay gia tri cua input--}}
+            {{--$.ajax({--}}
+                    {{--url: "{{route('basket.updatecard')}}",--}}
+                {{--type: "GET",--}}
+                {{--dataType: "json",--}}
+                {{--data: {"quality": _quality, "key": value},--}}
+                {{--success: function (data) {--}}
+                    {{--$("#quality").html(data);--}}
+                {{--}--}}
+            {{--})--}}
+        {{--}--}}
+    {{--</script>--}}
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
