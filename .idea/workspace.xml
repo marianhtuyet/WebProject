@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4a73f0-5ffc-4f55-84d8-c39f529280e1" name="Default Changelist" comment="">
-      <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" afterDir="false" />
-      <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" afterDir="false" />
-      <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/layout/menu.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/layout/menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/basket.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" afterDir="false" />
+      <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/baocaosdt/danhsach.blade.php" afterDir="false" />
+      <change beforePath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/layout/menu.blade.php" beforeDir="false" afterPath="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/layout/menu.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="70" column="85" lean-forward="true" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="85" />
+            <state relative-caret-position="969">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout1.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -48,38 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout3.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+            <state relative-caret-position="311">
+              <caret line="79" column="45" selection-start-line="78" selection-start-column="53" selection-end-line="79" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout2.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="301" column="14" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="301" selection-end-column="14" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="318" column="14" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="318" selection-end-column="14" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -87,23 +69,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1328">
-              <caret line="235" column="39" selection-start-line="235" selection-start-column="39" selection-end-line="235" selection-end-column="39" />
+            <state relative-caret-position="529">
+              <caret line="246" column="3" selection-start-line="246" selection-start-column="3" selection-end-line="246" selection-end-column="3" />
               <folding>
                 <element signature="e#59#76#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="340" column="14" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="340" selection-end-column="14" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -120,7 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>route</find>
       <find>detai</find>
       <find>print_r</find>
       <find>bas</find>
@@ -135,7 +103,6 @@
       <find>cont</find>
       <find>back</find>
       <find>You currently have 3 item(s) in your cart.</find>
-      <find>total</find>
       <find>them-benhnhan.post</find>
       <find>add to ca</find>
       <find>basket.get</find>
@@ -148,8 +115,10 @@
       <find>abc</find>
       <find>tbodydskhambenh</find>
       <find>quantity</find>
-      <find>quality</find>
       <find>html</find>
+      <find>ChangeQuality</find>
+      <find>quality</find>
+      <find>total</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\WebProject\resources\views\product</dir>
@@ -210,12 +179,12 @@
         <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_nomal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/macbook/category_macbook_pro.blade.php" />
         <option value="D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php" />
-        <option value="$PROJECT_DIR$/resources/views/category/basket.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/checkout/checkout1.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/checkout/checkout2.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/checkout/checkout3.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/basket.blade.php" />
       </list>
     </option>
   </component>
@@ -324,75 +293,71 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="checkout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TH" type="462c0819:PsiDirectoryNode" />
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,16 +448,18 @@
       <workItem from="1557665015255" duration="9008000" />
       <workItem from="1557754603298" duration="4739000" />
       <workItem from="1557791996500" duration="7774000" />
+      <workItem from="1557812035840" duration="5232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188021000" />
+    <option name="totallyTimeSpent" value="193253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -716,13 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="104" selection-start-line="52" selection-start-column="100" selection-end-line="52" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/loaibenh/sua.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -730,44 +691,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="104" column="102" selection-start-line="104" selection-start-column="102" selection-end-line="104" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="94" column="49" lean-forward="true" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="98" column="67" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/PhieuKhamController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/basket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/them.blade.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/BenhNhanController.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/routes/web.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/app/Http/Controllers/PhieuKhamController.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/basket.html" />
     <entry file="file://$PROJECT_DIR$/resources/views/layout/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -775,104 +703,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/phieukhambenh/dskhambenh.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/danhsach.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="133" column="28" lean-forward="true" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="146" column="24" lean-forward="true" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
-          <folding>
-            <element signature="e#3613#3636#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="70" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="340" column="14" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="340" selection-end-column="14" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/checkout1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="391" column="8" lean-forward="true" selection-start-line="391" selection-start-column="8" selection-end-line="391" selection-end-column="8" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="301" column="14" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="301" selection-end-column="14" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="318" column="14" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="318" selection-end-column="14" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/phieukhambenh/dskhambenh.blade.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/QuanLyPhongKham/resources/views/index/benhnhan/danhsach.blade.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/simple-shopping-cart/index.php" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout1.html" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/TH/WebProject/checkout1.html" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout2.html" />
+    <entry file="file://D:/AnhTuyet/BaiHoc/HK2_2018-2019/WEB/Web-Project/WebProject/checkout4.html" />
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="70" column="85" lean-forward="true" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1328">
-          <caret line="235" column="39" selection-start-line="235" selection-start-column="39" selection-end-line="235" selection-end-column="39" />
-          <folding>
-            <element signature="e#59#76#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="969">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout1.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -883,10 +731,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="246" column="3" selection-start-line="246" selection-start-column="3" selection-end-line="246" selection-end-column="3" />
+          <folding>
+            <element signature="e#59#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/checkout/checkout3.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+        <state relative-caret-position="311">
+          <caret line="79" column="45" selection-start-line="78" selection-start-column="53" selection-end-line="79" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/basket.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
         </state>
       </provider>
     </entry>

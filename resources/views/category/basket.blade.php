@@ -35,8 +35,8 @@
                                     <td>
                                     <input name="quality" type="number" value="{{($value["item_quality"])}}" class="form-control" onchange="ChangeQuality(this.value)">
                                     </td>
-                                    <td>{{number_format($value["item_cost"],0)}} vnd</td>
-                                    <td>{{number_format($value["item_quality"] * $value["item_cost"], 0)}} vnd</td>
+                                    <td ><span id="dg">{{number_format($value["item_cost"],0)}}</span> vnd</td>
+                                    <td ><span id="tong1">{{number_format($value["item_quality"] * $value["item_cost"], 0)}}</span> vnd</td>
                                     <td><a href="{{route('basket.remove', [$value["item_id"]])}}"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>
                                     <?php $total=$total + ($value["item_quality"] * $value["item_cost"]);
@@ -46,8 +46,10 @@
                             <tr>
                                 <td colspan="4" align="right">Total</td>
                                 <td colspan="2" >
-                                    <input name="total" id="total" value=" {{number_format($total, 0)}}">
-                                    {{number_format($total, 0)}} vnd </td>
+                                    <!--<input name="total" id="total" value=" {{number_format($total, 0)}}">-->
+                                    <span id="tong2">{{number_format($total, 0)}}</span> vnd
+
+                                 </td>
 
                             </tr>
                                 @endif
@@ -80,24 +82,43 @@
 @endsection
 @section('script-ori')
     {{--<-- co footer va cac thu vien js--}}
-    {{--<script>--}}
-        {{--function ChangeQuality(value)--}}
-        {{--{--}}
-            {{--var _quality= $("input[name='quality']").val();--}}
+    <script>
+        function formatMoney(n, c, d, t) {
+            var c = isNaN(c = Math.abs(c)) ? 2 : c,
+                d = d == undefined ? "." : d,
+                t = t == undefined ? "," : t,
+                s = n < 0 ? "-" : "",
+                i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+                j = (j = i.length) > 3 ? j % 3 : 0;
 
-            {{--$("input[name'total']").val=--}}
-            {{--// lay gia tri cua input--}}
-            {{--$.ajax({--}}
-                    {{--url: "{{route('basket.updatecard')}}",--}}
-                {{--type: "GET",--}}
-                {{--dataType: "json",--}}
-                {{--data: {"quality": _quality, "key": value},--}}
-                {{--success: function (data) {--}}
-                    {{--$("#quality").html(data);--}}
-                {{--}--}}
-            {{--})--}}
-        {{--}--}}
-    {{--</script>--}}
+            return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+        };
+        function ChangeQuality(value)
+        {
+            var _quality= $("input[name='quality']").val();
+            var myStr ="";
+            var str = document.getElementById('dg').innerText;
+            var patt1 = /\d/g;
+            var result = str.match(patt1);
+            result.forEach(function (value) {
+                myStr+=value;
+            });
+            document.getElementById('tong1').innerText=formatMoney(_quality*myStr,0);
+            document.getElementById('tong2').innerText=formatMoney(_quality*myStr,0);
+
+            /*$("input[name'total']").val=
+            // lay gia tri cua input
+            $.ajax({
+                    url: "{{route('basket.updatecard')}}",
+                type: "GET",
+                dataType: "json",
+                data: {"quality": _quality, "key": value},
+                success: function (data) {
+                    $("#quality").html(data);
+                }
+            })*/
+        }
+    </script>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
