@@ -9,72 +9,78 @@
 
     <div class="container">
         <div class="row">
-            <div id="basket" class="col-lg-9">
+            <div id="basket" class="col-lg-12">
                 <div class="box">
-                    <form method="post" action="checkout1.html">
+                    <form method="get" action="{{route('checkout1.get')}}">
+{{--                        {{csrf_field()}}--}}
                         <h1>Shopping cart</h1>
+                        <?php $total = 0; ?>
                         @if(!empty($_SESSION["shopping_cart"]))
-                        <p class="text-muted">You currently have <?php echo count($_SESSION["shopping_cart"])?> item(s) in your cart.</p>
-                        @endif
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tr>
-                                    <th colspan="2">Product</th>
-                                    <th>Quantity</th>
-                                    <th>Unit price</th>
-                                    <th colspan="2">Total</th>
-                                </tr>
-                                @if(!empty($_SESSION["shopping_cart"]))
-                               <?php $total = 0; ?>
-                                @foreach ($_SESSION["shopping_cart"] as $keys => $value)
-                                <tr>
-                                    <td><img src="assets/img/{{$value["item_img"]}}_1.jpg"
-                                    alt="null"></td>
-                                    <td>{{$value["item_name"]}}</td>
-                                    <td>
-                                    <input  type="number" value="{{$value["item_quality"]}}" class="form-control">
-                                    </td>
-<<<<<<< HEAD
-                                    <td ><span id="dg">{{number_format($value["item_cost"],0)}}</span> vnd</td>
-                                    <td ><span id="tong1">{{number_format($value["item_quality"] * $value["item_cost"], 0)}}</span> vnd</td>
-=======
-                                    <td>{{number_format($value["item_cost"],0)}}vnd</td>
-                                    <td>{{number_format($value["item_quality"] * $value["item_cost"], 0)}}vnd</td>
->>>>>>> parent of afd2a1d... checkout
-                                    <td><a href="{{route('basket.remove', [$value["item_id"]])}}"><i class="fa fa-trash-o"></i></a></td>
-                                </tr>
-                                   @endforeach
-<<<<<<< HEAD
+                            <p class="text-muted">You currently have <?php echo count($_SESSION["shopping_cart"])?>
+                                item(s) in your cart.</p>
 
-                            <tr>
-                                <td colspan="4" align="right">Total</td>
-                                <td colspan="2" >
-                                    <!--<input name="total" id="total" value=" {{number_format($total, 0)}}">-->
-                                    <span id="tong2">{{number_format($total, 0)}}</span> vnd
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <th colspan="2">Product</th>
+                                        <th>Quantity</th>
+                                        <th>Unit price</th>
+                                        <th colspan="2">Total</th>
+                                    </tr>
 
-                                 </td>
+                                    @foreach ($_SESSION["shopping_cart"] as $keys => $value)
+                                        <tr>
+                                            <input type="hidden" value="{{$keys}}" class="rowid">
+                                            <td><img src="assets/img/{{$value["item_img"]}}_1.jpg"
+                                                     alt="null"></td>
+                                            <td>{{$value["item_name"]}}</td>
+                                            <td>
+                                                <input name="quality" type="number" value="{{($value["item_quality"])}}"
+                                                       class="form-control" onchange="ChangeQuality(this)">
+                                            </td>
+                                            <td class="item_cost">
+                                                {{number_format($value["item_cost"],0)}}
+                                                vnd
+                                            </td>
+                                            <input type="hidden" class="item_cost_val" value="{{$value["item_cost"]}}">
+                                            <td class="total">{{number_format($value["item_quality"] * $value["item_cost"], 0)}}
+                                                vnd
+                                            </td>
+                                            <input type="hidden"
+                                                   value="{{$value["item_quality"] * $value["item_cost"]}}"
+                                                   class="total_val" name="total_val">
+                                            <td><a href="{{route('basket.remove', [$value["item_id"]])}}"><i
+                                                            class="fa fa-trash-o"></i></a></td>
+                                        </tr>
+                                        <?php $total = $total + ($value["item_quality"] * $value["item_cost"]);
+                                        ?>
+                                    @endforeach
 
-                            </tr>
-                                @endif
-=======
-                               @endif
->>>>>>> parent of afd2a1d... checkout
-                            </table>
-                        </div>
-                        <!-- /.table-responsive-->
-                        <div class="box-footer d-flex justify-content-between flex-column flex-lg-row">
-                            <div class="left"><a href="{{route('acer.category_acer_nitro')}}" class="btn btn-outline-secondary"><i
-                                            class="fa fa-chevron-left"></i> Continue shopping</a></div>
-                            <div class="right">
-                                <button  class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart
-                                </button>
-                                <button type="submit" class="btn btn-primary">Proceed to checkout <i
-                                            class="fa fa-chevron-right"></i></button>
+                                    <tr>
+                                        <td colspan="4" align="right">Total</td>
+                                        <td colspan="2" class="grand_total">
+                                            {{number_format($total, 0)}} vnd
+                                        </td>
+                                        <input type="hidden" name="grand_total" class="grand_total_val"
+                                               value=" {{$total}}">
+                                    </tr>
+                                    @endif
+                                </table>
                             </div>
-                        </div>
+                            <!-- /.table-responsive-->
+                            <div class="box-footer d-flex justify-content-between flex-column flex-lg-row">
+                                <div class="left"><a href="{{route('acer.category_acer_nitro')}}"
+                                                     class="btn btn-outline-secondary"><i
+                                                class="fa fa-chevron-left"></i> Continue shopping</a></div>
+                                <div class="right">
+                                    <button class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">Proceed to checkout <i
+                                                class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
                     </form>
                 </div>
-                <!-- /.box-->
 
             </div>
 
@@ -87,48 +93,7 @@
 
 @endsection
 @section('script-ori')
-    {{--<-- co footer va cac thu vien js--}}
-<<<<<<< HEAD
-    <script>
-        function formatMoney(n, c, d, t) {
-            var c = isNaN(c = Math.abs(c)) ? 2 : c,
-                d = d == undefined ? "." : d,
-                t = t == undefined ? "," : t,
-                s = n < 0 ? "-" : "",
-                i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
-                j = (j = i.length) > 3 ? j % 3 : 0;
 
-            return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
-        };
-        function ChangeQuality(value)
-        {
-            var _quality= $("input[name='quality']").val();
-            var myStr ="";
-            var str = document.getElementById('dg').innerText;
-            var patt1 = /\d/g;
-            var result = str.match(patt1);
-            result.forEach(function (value) {
-                myStr+=value;
-            });
-            document.getElementById('tong1').innerText=formatMoney(_quality*myStr,0);
-            document.getElementById('tong2').innerText=formatMoney(_quality*myStr,0);
-
-            /*$("input[name'total']").val=
-            // lay gia tri cua input
-            $.ajax({
-                    url: "{{route('basket.updatecard')}}",
-                type: "GET",
-                dataType: "json",
-                data: {"quality": _quality, "key": value},
-                success: function (data) {
-                    $("#quality").html(data);
-                }
-            })*/
-        }
-    </script>
-=======
-
->>>>>>> parent of afd2a1d... checkout
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -136,4 +101,43 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
     <script src="assets/js/front.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // $('input[name="quality"]').change(function () {
+            //     changeQuality();
+            // })
+        });
+
+        function ChangeQuality(obj) {
+            let objtable = $(obj).parent().parent(); //ra toi <tr>
+            let qty = obj.value;
+            // console.log(qty);
+            let item_cost = objtable.find(".item_cost_val").val();
+            let total = parseInt(item_cost) * 1 * qty;
+            // console.log(total);
+            objtable.find(".total_val").val(total);
+            objtable.find(".total").html(formatMoney(total));
+            let rowid = objtable.find(".rowid").val();
+            // console.log(rowid);
+            let grand_total = 0;
+            grand_total = parseInt(objtable.parent().find(".grand_total_val").val()) + parseInt(item_cost);
+            // console.log(grand_total);
+            objtable.parent().find(".grand_total_val").val(grand_total); //ra table
+            objtable.parent().find(".grand_total").html(formatMoney(grand_total));
+
+            // ajax
+            $.ajax({
+                url:"{{route('checkout.save')}}",
+                type: 'GET',
+                async: true,
+                data:  {"_quality":qty, "_key": rowid, "_grand_total": grand_total},
+                success: function (data) {
+                    console.log(data);
+                }
+
+            });
+
+        }
+    </script>
 @endsection

@@ -66,3 +66,24 @@ Route::get('category/basket','IndexController@getBasket')->name('basket.get');
 Route::get('basket/remove/{id}', 'IndexController@RemoveProduct')->name('basket.remove');
 
 Route::post('basket/updatecard','IndexController@updateCard')->name('basket.updatecard');
+
+Route::get('checkout/checkout1', 'IndexController@getCheckout1')->name('checkout1.get');
+Route::post('checkout/checkout2', 'IndexController@getCheckout2')->name('checkout2.get');
+Route::post('checkout/checkout3', 'IndexController@getCheckout3')->name('checkout3.get');
+
+Route::get('ajaxinvoice', 'IndexController@getdataInvoice')->name('checkout.save');
+
+Route::post('post-invoice', 'IndexController@saveInvoice')->name('invoice.save');
+
+
+Route::post('customer/account','CustomerController@checkAccount')->name('customer.account');
+//ham dang nhap, kiem tra tai khoan
+Route::get('customer/register','CustomerController@Register')->name('customer.register');
+//ham dang ky
+
+
+//        hàm lấy thông tin website
+Route::get('contact/info','IndexController@getContact' )->name('contact.info');
+Route::get('contact/faq', 'IndexController@getFaq' )->name('contact.faq');
+Route::get('contact/text', 'IndexController@getText' )->name('contact.text');
+

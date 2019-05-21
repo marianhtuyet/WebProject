@@ -7,8 +7,8 @@
             <div class="col-lg-12 text-center text-lg-right">
                 <ul class="menu list-inline mb-0">
                     <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Đăng nhập</a></li>
-                    <li class="list-inline-item"><a href="register.html">Đăng ký</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Liên hệ</a></li>
+                    <li class="list-inline-item"><a href="{{route('customer.register')}}">Đăng ký</a></li>
+                    <li class="list-inline-item"><a href="{{route('contact.info')}}">Liên hệ</a></li>
                 </ul>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
                 </div>
                 <div class="modal-body">
-                    <form action="customer-orders.html" method="post">
+                    <form action="{{route('customer.account')}}" method="post">
                         <div class="form-group">
                             <input id="email-modal" type="text" placeholder="email" class="form-control">
                         </div>
@@ -33,7 +33,7 @@
                         </p>
                     </form>
                     <p class="text-center text-muted">Chưa có tài khoản?</p>
-                    <p class="text-center text-muted"><a href="register.html"><strong>Đăng kí ngay</strong></a>! Đăng ký cực nhanh chỉ một phút để nhận được nhiều ưu đãi đặc biệt!</p>
+                    <p class="text-center text-muted"><a href="{{route('customer.register')}}"><strong>Đăng kí ngay</strong></a>! Đăng ký cực nhanh chỉ một phút để nhận được nhiều ưu đãi đặc biệt!</p>
                 </div>
             </div>
         </div>

@@ -50,7 +50,7 @@
                                     </p>
                                     <p class="buttons"><a href="{{route('category.detail', [$value->id])}}"
                                                           class="btn btn-outline-secondary">View detail</a><a
-                                                href="{{route('category.basket', [$value->id])}}}" class="btn btn-primary"><i
+                                                href="{{route('category.basket', [$value->id])}}" class="btn btn-primary"><i
                                                     class="fa fa-shopping-cart"></i>Add to cart</a></p>
                                 </div>
                                 <!-- /.text-->
