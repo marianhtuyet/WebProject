@@ -24,18 +24,19 @@
                     <p>Mau chóng đăng ký thành viên để nhận được nhiều ưu đãi và khuyến mãi từ cửa hàng. Đừng lo việc đăng ký chỉ mất chưa đầy 1 phút!</p>
                     <p class="text-muted">Nếu có nhu cầu liên hệ hoặc khiếu nại vui lòng tới <a href="contact.html">trang liên hệ</a>, trung tâm chăm sóc khách hàng của chúng tôi làm việc 24/7.</p>
                     <hr>
-                    <form action="customer-orders.html" method="post">
+                    <form action="{{route('register.post')}}" method="post">
+                        {{csrf_field()}}}
                         <div class="form-group">
                             <label for="name">Tên</label>
-                            <input id="name" type="text" class="form-control" placeholder="Nguyễn Văn A">
+                            <input id="name" name="name" type="text" class="form-control" placeholder="Nguyễn Văn A">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input id="email" type="text" class="form-control" placeholder="abc123456@gmail.com">
+                            <input id="email" name="email" type="text" class="form-control" placeholder="abc123456@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="password">Mật khẩu</label>
-                            <input id="password" type="password" class="form-control" placeholder="Mật khẩu">
+                            <input id="password" name="password" type="password" class="form-control" placeholder="Mật khẩu">
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Đăng ký</button>
@@ -52,11 +53,11 @@
                     <form action="customer-orders.html" method="post">
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input id="email" type="text" class="form-control" placeholder="abc123456@gmail.com">
+                            <input id="email" name="email_modal" type="text" class="form-control" placeholder="abc123456@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="password">Mật khẩu</label>
-                            <input id="password" type="password" class="form-control" placeholder="Mật khẩu">
+                            <input id="password" name="password_modal" type="password" class="form-control" placeholder="Mật khẩu">
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Đăng nhập</button>

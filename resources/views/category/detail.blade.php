@@ -78,8 +78,6 @@
 @endsection
 @section('script-ori')
     {{--<-- co footer va cac thu vien js--}}
-
-
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.cookie/jquery.cookie.js"></script>

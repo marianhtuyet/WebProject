@@ -19,7 +19,7 @@
             </div>
             <div id="checkout" class="col-lg-9">
                 <div class="box">
-                    <form method="get" action="{{route('trangchu.index')}}">
+                    <form method="get" action="{{route('invoice.save')}}">
                         {{--{{csrf_field()}}--}}
                         <h1>Thanh toán - Review đơn hàng</h1>
                         <div class="nav flex-column flex-sm-row nav-pills"><a href="{{route('checkout1.get')}}"
@@ -49,7 +49,7 @@
                                             <td>{{$value["item_name"]}}</td>
                                             <td>
                                                 <input name="quality" type="number" value="{{($value["item_quality"])}}"
-                                                       class="form-control">
+                                                       class="form-control" readonly>
                                             </td>
                                             <td class="item_cost">
                                                 {{number_format($value["item_cost"],0)}}
@@ -84,7 +84,7 @@
                         <div class="box-footer d-flex justify-content-between"><a href="{{route('checkout2.get')}}"
                                                                                   class="btn btn-outline-secondary"><i
                                         class="fa fa-chevron-left"></i>Quay về phương thức giao hàng</a>
-                            <button class="btn btn-primary"><a href="{{route('trangchu.index')}}"></a>Thanh toán<i class="fa fa-chevron-right"></i></button>
+                            <button class="btn btn-primary"><a href="{{route('invoice.save')}}"></a>Lưu đơn hàng<i class="fa fa-chevron-right"></i></button>
                         </div>
                     </form>
                 </div>

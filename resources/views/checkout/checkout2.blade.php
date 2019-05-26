@@ -1,3 +1,10 @@
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+?>
 @extends('layout.index')
 @section('title')
 
@@ -19,7 +26,7 @@
             </div>
             <div id="checkout" class="col-lg-9">
                 <div class="box">
-                    <form method="post" action="{{route('checkout3.get')}}">
+                    <form method="post" action="{{route('checkout3.post')}}">
                         {{csrf_field()}}
                         <h1>Thanh toán -Giao hàng</h1>
                         <div class="nav flex-column flex-sm-row nav-pills"><a href="{{route('checkout1.get')}}" class="nav-link flex-sm-fill text-sm-center">
@@ -34,7 +41,10 @@
                                         <h4>Giao hàng nhanh</h4>
                                         <p>Nhận hàng sau 1-2 ngày.</p>
                                         <div class="box-footer text-center">
-                                            <input type="radio" name="delivery" value="delivery1">
+                                            <input type="radio" name="delivery" value="1"
+                                              @if(isset($_SESSION["invoice"]) && $_SESSION["invoice"][0]["invoice_method_delivery"]==1 )
+                                           checked="checked"
+                                             @endif;>
                                         </div>
                                     </div>
                                 </div>
@@ -43,12 +53,15 @@
                                         <h4>Giao hàng tiêu chuẩn</h4>
                                         <p>Nhận hàng sau 5 - 10 ngày.</p>
                                         <div class="box-footer text-center">
-                                            <input type="radio" name="delivery" value="delivery2">
+                                            <input type="radio" name="delivery" value="2"
+                                            @if(isset($_SESSION["invoice"]) && $_SESSION["invoice"][0]["invoice_method_delivery"]==2 )
+                                           checked="checked"
+                                             @endif;>
                                         </div>
                                     </div>
                                 </div>
 
-                                <input type="hidden" name="id_invoice" value="{{$invoice->id}}">
+                                
                             </div>
                         </div>
                         <div class="box-footer d-flex justify-content-between"><a href="{{route('checkout1.get')}}" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i>Back to address</a>
@@ -71,7 +84,7 @@
                                 <tbody>
                                 <tr>
                                     <td>Giá tổng đơn hàng</td>
-                                    <th>{{$invoice->total}}</th>
+                                    <th>{{$_SESSION["invoice"][0]["invoice_total"]}}</th>
                                 </tr>
                                 <tr>
                                     <td>Phí ship</td>
@@ -83,7 +96,7 @@
                                 </tr>
                                 <tr class="total">
                                     <td>Tổng</td>
-                                    <th>{{$invoice->total + 20000}}</th>
+                                    <th>{{$_SESSION["invoice"][0]["invoice_total"] + 20000}}</th>
                                 </tr>
                                 </tbody>
                             </table>

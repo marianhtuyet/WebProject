@@ -1,3 +1,10 @@
+<?php
+if(session_status() == PHP_SESSION_NONE)
+{
+    session_start();
+}
+?>
+
 @extends('layout.index')
 @section('title')
 
@@ -19,36 +26,31 @@
             </div>
             <div id="checkout" class="col-lg-9">
                 <div class="box">
-                    <form method="post" action="{{route('checkout2.get')}}">
+                    <form method="post" action="{{route('checkout2.post')}}">
                         {{csrf_field()}}
                         <h1>Thanh toán - Địa chỉ</h1>
-                        <!--<div class="nav flex-column flex-md-row nav-pills text-center">-->
-                        <!--<a href="checkout1.html" class="nav-link flex-sm-fill text-sm-center active">-->
-                        <!--<i class="fa fa-map-marker">             -->
-                        <!--</i>Địa chỉ</a>-->
-                        <!--<a href="checkout2.html" class="nav-link flex-sm-fill text-sm-center disabled">-->
-                        <!--<i class="fa fa-truck">                 -->
-                        <!--</i>Phương thức giao hàng</a><a href="checkout4.html" class="nav-link flex-sm-fill text-sm-center disabled"> -->
-                        <!--<i class="fa fa-eye">              -->
-                        <!--</i>Review đơn hàng</a></div>-->
+                        
                         <div class="nav flex-column flex-sm-row nav-pills"><a href="{{route('checkout1.get')}}" class="nav-link flex-sm-fill text-sm-center active">
                                 <i class="fa fa-map-marker">
-                                </i>Địa chỉ</a><a href="#" class="nav-link flex-sm-fill text-sm-center"> <i class="fa fa-truck">
-                                </i>Phương thức giao hàng</a><a href="#" class="nav-link flex-sm-fill text-sm-center "> <i class="fa fa-eye">
-                                </i>Review đơn hàng</a></div>
+                                </i>Địa chỉ</a><a href="{{route('checkout2.get')}}" class="nav-link flex-sm-fill text-sm-center"> <i class="fa fa-truck">
+                                </i>Phương thức giao hàng</a>
+                                <a href="{{route('checkout3.get')}}" class="nav-link flex-sm-fill text-sm-center "> <i class="fa fa-eye">
+                                </i>Review đơn hàng</a>
+
+                            </div>
 
                         <div class="content py-3">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="firstname">Họ </label>
-                                        <input id="firstname" name="firstname" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="lastname">Tên</label>
-                                        <input id="lastname" name="lastname" type="text" class="form-control">
+                                        <label for="fullname">Họ Tên</label>
+                                        <input id="fullname" name="fullname" type="text" class="form-control"
+
+                                             @if(isset($_SESSION["invoice"]))
+                                             value={{$_SESSION["invoice"][0]["invoice_name"]}}
+                                             @endif;
+
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -57,36 +59,49 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="house_nmber">Số nhà</label>
-                                        <input id="house_nmber" name="house_number" type="text" class="form-control">
+                                        <input id="house_nmber" name="house_number" type="text" class="form-control"
+                                        @if(isset($_SESSION["invoice"]))
+                                             value={{$_SESSION["invoice"][0]["invoice_house_number"]}}
+                                             @endif;>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="street">Đường</label>
-                                        <input id="street" name="street" type="text" class="form-control">
+                                        <input id="street" name="street" type="text" class="form-control"
+                                            @if(isset($_SESSION["invoice"]))
+                                                 value={{$_SESSION["invoice"][0]["invoice_street"]}}
+                                                 @endif;>
                                     </div>
                                 </div>
                             </div>
                             <!-- /.row-->
                             <div class="row">
-                                <div class="col-md-12 col-lg-4">
+                                <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="city">Thành phố</label>
-                                        <input id="city" name="city" type="text" class="form-control">
+                                        <input id="city" name="city" type="text" class="form-control"
+                                        @if(isset($_SESSION["invoice"]))
+                                             value={{$_SESSION["invoice"][0]["invoice_city"]}}
+                                             @endif;
+                                        >
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-4">
+                                <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="phone_number">Số điện thoại</label>
-                                        <input id="phone_number" name="phone_number" type="text" class="form-control">
+                                        <input id="phone_number" name="phone_number" type="text" class="form-control"@if(isset($_SESSION["invoice"]))
+                                             value={{$_SESSION["invoice"][0]["invoice_phone_number"]}}
+                                             @endif;>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-4">
+                                <!-- <div class="col-md-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input id="email" name="email" type="text" class="form-control">
+                                        <input id="email" name="email" type="text" class="form-control"
+                                       >
                                     </div>
-                                </div>
+                                </div> -->
                         <input type="hidden" name="total" value="{{$total}}">
                             </div>
                             <!-- /.row-->

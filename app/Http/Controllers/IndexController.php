@@ -15,8 +15,8 @@ class IndexController extends Controller
     public function getList()
     {
         $index = Products::all();
-        echo "<script>alert('Đã ghi nhận đon hàng')</script>";
-        return view('trangchu.index');
+//        return view('trangchu.index');
+        redirect()->back();
     }
 
     public function getcategory()
@@ -172,7 +172,8 @@ class IndexController extends Controller
                 }
                 echo '<script>alert("Sản phẩm đã thêm")</script>';
             }
-        } else {
+        }
+        else {
             $item_array = array(
                 'item_id' => $request->id,
                 'item_name' => $detail->name,
@@ -236,52 +237,75 @@ class IndexController extends Controller
         return view('checkout.checkout1', compact('total'));
     }
 
+
     public function getCheckout2(Request $request)
     {
-        $invoice = new Invoice();
-        $invoice->name_customer = $request->lastname;
-        $invoice->house_number = $request->house_number;
-        $invoice->street = $request->street;
-        $invoice->city = $request->city;
-        $invoice->create_date = date('Y-m-d');
-        $invoice->total = $request->total;
-        $invoice->state = 1;
-        $invoice->note = 'null';
-        $invoice->id_customer = 1;
-        $invoice->method_delivery = 1;
-        $invoice->ship = 20000;
-        $invoice->district = 'null';
-        $invoice->phone_number = $request->phone_number;
-//        echo "$invoice";
-        $invoice->save();
-        $id = ($invoice->id);
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
-        print_r($_SESSION["shopping_cart"]);
-        foreach ($_SESSION["shopping_cart"] as $key => $value) {
-            $detail_invoice = new detail_invoice();
-            $detail_invoice->id_invoice = $id;
-            $detail_invoice->id_product = $value["item_id"];
-            $detail_invoice->quality = $value["item_quality"];
-            $detail_invoice->save();
+
+        // $total = $request->grand_total;
+//        lay gia tri tong hoa don
+        return view('checkout.checkout2');
+    }
+        public function getCheckout3(Request $request)
+    {
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
         }
-        return view('checkout.checkout2', compact('invoice'));
+
+        // $total = $request->grand_total;
+//        lay gia tri tong hoa don
+        return view('checkout.checkout3');
+    }
+    public function postCheckout2(Request $request)
+    {
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+     
+        $item_array = array(
+                'invoice_name' => $request->fullname,
+                'invoice_house_number' => $request->house_number,
+                'invoice_street' =>  $request->street,
+                'invoice_city' => $request->city,
+                'invoice_create_date' => date('Y-m-d'),
+                'invoice_total' =>$request->total,
+                'invoice_state' =>1,
+                'invoice_id_customer' =>1,
+                'invoice_method_delivery' =>1,
+                'invoice_ship' =>200000,
+                'invoice_district' =>null,
+                'invoice_phone_number' => $request->phone_number,
+            );
+            $_SESSION["invoice"][0] = $item_array;
+          
+//        echo "$invoice";
+        // $invoice->save();
+        // $id = ($invoice->id);
+        
+        // print_r($_SESSION["shopping_cart"]);
+        // foreach ($_SESSION["shopping_cart"] as $key => $value) {
+        //     $detail_invoice = new detail_invoice();
+        //     $detail_invoice->id_invoice = $id;
+        //     $detail_invoice->id_product = $value["item_id"];
+        //     $detail_invoice->quality = $value["item_quality"];
+        //     $detail_invoice->save();
+        // }
+            print_r( $_SESSION["invoice"][0]["invoice_method_delivery"]);
+        return view('checkout.checkout2');
     }
 
-    public function getCheckout3(Request $request)
+    public function postCheckout3(Request $request)
 
     {
-
-        $invoice = Invoice::find($request->id_invoice);
-        $invoice->method_delivery = $request->delivery;
-//        echo "$request->id_invoice";
-//        echo "$request->delivery";
-//        echo "$invoice";
-        $invoice->save();
-        if (session_status() == PHP_SESSION_NONE) {
+         if (session_status() == PHP_SESSION_NONE) 
+         {
             session_start();
         }
+
+        $_SESSION["invoice"][0]["invoice_method_delivery"] =  $request->delivery;
+       
         return view('checkout.checkout3');
     }
 
@@ -294,7 +318,7 @@ class IndexController extends Controller
             $key = $request->_key;
             $quality = $request->_quality;
             $_SESSION["shopping_cart"][$key]["item_quality"] = $quality;
-//            print_r($_SESSION["shopping_cart"]);
+           // print_r($_SESSION["shopping_cart"]);
             $total = 0;
             foreach ($_SESSION["shopping_cart"] as $value) {
                 $total = $total + $value["item_cost"] * $value["item_quality"];
@@ -303,36 +327,46 @@ class IndexController extends Controller
 //            return $total;
         };
 
-
     }
 
     public function saveInvoice(Request $request)
     {
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+ // print_r($_SESSION["invoice"][0]);
+        if(empty($_SESSION["invoice"][0]["invoice_name"]) || empty($_SESSION["invoice"][0]["invoice_phone_number"])){
+           
+            $total = $_SESSION["invoice"][0]["invoice_total"];
+            echo "<script>alert('Vui lòng nhập thông tin khách hàng')</script>";
+          return view('checkout.checkout1', compact('total'));
+        }else
+        {
+            $invoice_new = new Invoice();
+        $invoice_new->name_customer = $_SESSION["invoice"][0]["invoice_name"];
+        $invoice_new->house_number =  $_SESSION["invoice"][0]["invoice_house_number"];
+        $invoice_new->street =  $_SESSION["invoice"][0]["invoice_street"];
+        $invoice_new->city =  $_SESSION["invoice"][0]["invoice_city"];
+        $invoice_new->create_date = date('Y-m-d');
+        $invoice_new->total =  $_SESSION["invoice"][0]["invoice_total"];
+        $invoice_new->state = 1;
+            if(isset($_SESSION["customer"]))
+            {
+                 $invoice->id_customer = $_SESSION["customer"][0]["cus_id"];
+            }
+        $invoice->id_customer = 0;
 
-        $total = 1000;
-        $create_date = date('Y-m-d');
-        $state = 1;
-        $address = "Dong Nai";
-        $note = "Tuyet ngao";
-        $id_customer = 1;
+        $invoice_new->method_delivery =$_SESSION["invoice"][0]["invoice_method_delivery"]; 
+        $invoice_new->ship = 20000;
+        $invoice_new->district = 'null';
+        $invoice_new->phone_number = $_SESSION["invoice"][0]["invoice_phone_number"];
+        $invoice_new->save();
 
-
-        //tao moi 1 record trong csdl
-        $invoice = new Invoice();
-        $invoice->create_date = $create_date;
-        $invoice->cost = $total;
-        $invoice->address = $address;
-        $invoice->note = $note;
-        $invoice->state = $state;
-        $invoice->id_customer = $id_customer;
-        $invoice->save();
-        // luu thong tin hoa don
-        dd($invoice->id);
-        echo dd($invoice->id);
-
-        //sua 1 record da co
-        $invoice2 = Invoice::find(1);
-        $invoice2 = Invoice::where("id_customer", 1)->first();
+        }
+        print_r($_SESSION["invoice"][0]);
+        echo "<script>alert('Đã lưu đơn hàng. Xin cảm ơn!')</script>";
+    return view("trangchu.index");
+        
 
 
     }

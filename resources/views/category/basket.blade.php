@@ -111,6 +111,7 @@
 
         function ChangeQuality(obj) {
             let objtable = $(obj).parent().parent(); //ra toi <tr>
+            let old_total = objtable.find(".total_val").val();
             let qty = obj.value;
             // console.log(qty);
             let item_cost = objtable.find(".item_cost_val").val();
@@ -121,7 +122,7 @@
             let rowid = objtable.find(".rowid").val();
             // console.log(rowid);
             let grand_total = 0;
-            grand_total = parseInt(objtable.parent().find(".grand_total_val").val()) + parseInt(item_cost);
+            grand_total = parseInt(objtable.parent().find(".grand_total_val").val()) + total - old_total;
             // console.log(grand_total);
             objtable.parent().find(".grand_total_val").val(grand_total); //ra table
             objtable.parent().find(".grand_total").html(formatMoney(grand_total));

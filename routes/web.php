@@ -68,17 +68,30 @@ Route::get('basket/remove/{id}', 'IndexController@RemoveProduct')->name('basket.
 Route::post('basket/updatecard','IndexController@updateCard')->name('basket.updatecard');
 
 Route::get('checkout/checkout1', 'IndexController@getCheckout1')->name('checkout1.get');
-Route::post('checkout/checkout2', 'IndexController@getCheckout2')->name('checkout2.get');
-Route::post('checkout/checkout3', 'IndexController@getCheckout3')->name('checkout3.get');
+
+
+Route::get('checkout/checkout2', 'IndexController@getCheckout2')->name('checkout2.get');
+Route::get('checkout/checkout3', 'IndexController@getCheckout3')->name('checkout3.get');
+Route::post('checkout/checkout2', 'IndexController@postCheckout2')->name('checkout2.post');
+Route::post('checkout/checkout3', 'IndexController@postCheckout3')->name('checkout3.post');
+
+
+
 
 Route::get('ajaxinvoice', 'IndexController@getdataInvoice')->name('checkout.save');
 
-Route::post('post-invoice', 'IndexController@saveInvoice')->name('invoice.save');
+Route::get('save-invoice', 'IndexController@saveInvoice')->name('invoice.save');
 
 
-Route::post('customer/account','CustomerController@checkAccount')->name('customer.account');
+Route::post('checkaccount','CustomerController@checkAccount')->name('customer.account');
 //ham dang nhap, kiem tra tai khoan
+Route::get('customer/info', 'CustomerController@InfoCustomer')->name('customer.info');
 Route::get('customer/register','CustomerController@Register')->name('customer.register');
+Route::post('post/info', 'CustomerController@postRegister')->name('register.post');
+Route::get('index/', 'CustomerController@Logout')->name('customer.logout');
+
+Route::post('customer/changepass','CustomerController@ChangePassword')->name('customer.changepass');
+Route::post('customer/changeinfo','CustomerController@ChangeInfomation')->name('customer.changeinfo');
 //ham dang ky
 
 
