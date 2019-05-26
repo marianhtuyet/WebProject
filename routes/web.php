@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('trangchu.index');
+    $bestsale=  \App\Products::where('best_sale', '1')->get();
+    print_r(count($bestsale));
+    return view('trangchu.index', compact('bestsale'));
 }); //bien dau tien ddos laf duong dan
 
  Route::get('trangchu/index', 'IndexController@getList')->name('trangchu.index');
@@ -100,3 +102,6 @@ Route::get('contact/info','IndexController@getContact' )->name('contact.info');
 Route::get('contact/faq', 'IndexController@getFaq' )->name('contact.faq');
 Route::get('contact/text', 'IndexController@getText' )->name('contact.text');
 
+
+//hamf lay san pham duoc mua nhieu nhat
+Route::get('index/bestsale', 'IndexController@getBestSale')->name('index.bestsale');

@@ -73,21 +73,22 @@
         </div>
         <div class="container">
             <div class="product-slider owl-carousel owl-theme">
+                @foreach($bestsale as $key=>$value)
                 <div class="item">
                     <div class="product">
                         <div class="flip-container">
                             <div class="flipper">
-                                <div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_1_1_1.jpg" alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_1_1_2.jpg" alt="" class="img-fluid"></a></div>
+                                <div class="front"><a href="{{route('category.detail', [$value->id])}}"><img
+                                                src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg" alt="" class="img-fluid"></a></div>
+                                <div class="back"><a href="{{route('category.detail', [$value->id])}}"><img
+                                                src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg" alt="" class="img-fluid"></a></div>
                                 <!-- front - back: đặt 2 hình khi chỉ vào sẽ xoay -->
                             </div>
                         </div>
-                        <a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_1_1_1.jpg"
+                        <a href="{{route('category.detail', [$value->id])}}" class="invisible"><img src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg"
                                                                                          alt="" class="img-fluid"></a>
                         <div class="text">
-                            <h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Asus TUF Gaming FX505GM-BN117T</a></h3>
+                            <h3><a href="{{route('category.detail', [$value->id])}}">Laptop Asus TUF Gaming FX505GM-BN117T</a></h3>
                             <p class="price">
                                 <del></del>
                                 28.490.000đ
@@ -113,223 +114,224 @@
                     </div>
                     <!-- /.product-->
                 </div>
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_2_1_1.jpg" alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_2_1_2.jpg" alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_2_1_2.jpg"
-                                                                                         alt="" class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Asus GL703GE-EE047T (I7-8750H)</a></h3>
-                            <p class="price">
-                                <del>30.990.000</del>
-                                <br></br>29.990.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                        <div class="ribbon sale">
-                            <div class="theribbon">SALE</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                        <div class="ribbon new">
-                            <div class="theribbon">NEW</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                        <div class="ribbon gift">
-                            <div class="theribbon">GIFT</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                    </div>
-                    <!-- /.product-->
-                </div>
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_3_1_1.jpg" alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_3_1_2.jpg" alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_3_1_2.jpg"
-                                                                                         alt="" class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Acer Nitro 5 AN515-52-51GF
-                                    (NH.Q3MSV.001)</a></h3>
-                            <p class="price">
-                                <del></del>
-                                18.699.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                    </div>
-                    <!-- /.product-->
-                </div>
+                @endforeach
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img--}}
+                                                {{--src="assets/img/acer_2_1_1.jpg" alt="" class="img-fluid"></a></div>--}}
+                                {{--<div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img--}}
+                                                {{--src="assets/img/acer_2_1_2.jpg" alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_2_1_2.jpg"--}}
+                                                                                         {{--alt="" class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Asus GL703GE-EE047T (I7-8750H)</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del>30.990.000</del>--}}
+                                {{--<br></br>29.990.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                        {{--<div class="ribbon sale">--}}
+                            {{--<div class="theribbon">SALE</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                        {{--<div class="ribbon new">--}}
+                            {{--<div class="theribbon">NEW</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                        {{--<div class="ribbon gift">--}}
+                            {{--<div class="theribbon">GIFT</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img--}}
+                                                {{--src="assets/img/acer_3_1_1.jpg" alt="" class="img-fluid"></a></div>--}}
+                                {{--<div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img--}}
+                                                {{--src="assets/img/acer_3_1_2.jpg" alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_3_1_2.jpg"--}}
+                                                                                         {{--alt="" class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Acer Nitro 5 AN515-52-51GF--}}
+                                    {{--(NH.Q3MSV.001)</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del></del>--}}
+                                {{--18.699.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
 
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_3_1_1.jpg" alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img
-                                                src="assets/img/acer_3_1_2.jpg" alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_3_1_2.jpg"
-                                                                                         alt="" class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Acer Nitro 5 AN515-52-51GF
-                                    (NH.Q3MSV.001)</a></h3>
-                            <p class="price">
-                                <del></del>
-                                18.699.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                    </div>
-                    <!-- /.product-->
-                </div>
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img--}}
+                                                {{--src="assets/img/acer_3_1_1.jpg" alt="" class="img-fluid"></a></div>--}}
+                                {{--<div class="back"><a href="Acer_Nitro_5_AN515_52_51GF.html"><img--}}
+                                                {{--src="assets/img/acer_3_1_2.jpg" alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Acer_Nitro_5_AN515_52_51GF.html" class="invisible"><img src="assets/img/acer_3_1_2.jpg"--}}
+                                                                                         {{--alt="" class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Acer_Nitro_5_AN515_52_51GF.html">Laptop Acer Nitro 5 AN515-52-51GF--}}
+                                    {{--(NH.Q3MSV.001)</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del></del>--}}
+                                {{--18.699.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
 
 
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img src="#" alt=""
-                                                                                                   class="img-fluid"></a>
-                                </div>
-                                <div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\LinhKien\CPU\Core i5\Bộ vi xử lý_ CPU Intel Core I5-8600 (3.1GHz - 4.3GHz _LGA 1151-v2) _ PhongVu.vn_files/2.jpg"
-                                                alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product2.jpg" alt=""
-                                                                                          class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Dell_Inspiron_5370_N3I3002W.html">Bộ vi xử lý_ CPU Intel Core I5-8600 (3.1GHz -
-                                    4.3GHz _LGA 1151-v2)</a></h3>
-                            <p class="price">
-                                <del></del>
-                                6.399.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                        <div class="ribbon new">
-                            <div class="theribbon">NEW</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                    </div>
-                    <!-- /.product-->
-                </div>
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\Laptop\Macbook\Laptop MacBook Pro 2018 13.3_ MR9R2_files/1.jpg"
-                                                alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\Laptop\Macbook\Laptop MacBook Pro 2018 13.3_ MR9R2_files/2.jpg"
-                                                alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product1.jpg" alt=""
-                                                                                          class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Dell_Inspiron_5370_N3I3002W.html">Macbook</a></h3>
-                            <p class="price">
-                                <del></del>
-                                50.990.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                        <div class="ribbon gift">
-                            <div class="theribbon">GIFT</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                    </div>
-                    <!-- /.product-->
-                </div>
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\LinhKien\HDD_SSD\HDD\Ổ cứng HDD Western Digital Black 4TB 3.5_ SATA 3 - WD4005FZBX _ Phong Vũ_files/1.jpg"
-                                                alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\LinhKien\HDD_SSD\HDD\Ổ cứng HDD Western Digital Black 4TB 3.5_ SATA 3 - WD4005FZBX _ Phong Vũ_files/2.jpg"
-                                                alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product2.jpg" alt=""
-                                                                                          class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Dell_Inspiron_5370_N3I3002W.html">Ổ cứng HDD Western Digital Black 4TB 3.5_
-                                    SATA 3 - WD4005FZBX</a></h3>
-                            <p class="price">
-                                <del>$280</del>
-                                4.990.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                        <div class="ribbon sale">
-                            <div class="theribbon">SALE</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                        <div class="ribbon new">
-                            <div class="theribbon">NEW</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                        <div class="ribbon gift">
-                            <div class="theribbon">GIFT</div>
-                            <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                    </div>
-                    <!-- /.product-->
-                </div>
-                <div class="item">
-                    <div class="product">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\LinhKien\CardManHinh\GTX\Card màn hình ASUS GeForce GTX 1050Ti 4GB Cerberus OC _ PhongVu.vn_files/1.png"
-                                                alt="" class="img-fluid"></a></div>
-                                <div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img
-                                                src="img_new\New folder\LinhKien\CardManHinh\GTX\Card màn hình ASUS GeForce GTX 1050Ti 4GB Cerberus OC _ PhongVu.vn_files/2.png"
-                                                alt="" class="img-fluid"></a></div>
-                            </div>
-                        </div>
-                        <a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product3.jpg" alt=""
-                                                                                          class="img-fluid"></a>
-                        <div class="text">
-                            <h3><a href="Dell_Inspiron_5370_N3I3002W.html">Card màn hình ASUS GeForce GTX 1050Ti 4GB
-                                    Cerberus OCe</a></h3>
-                            <p class="price">
-                                <del></del>
-                                4.660.000đ
-                            </p>
-                        </div>
-                        <!-- /.text-->
-                    </div>
-                    <!-- /.product-->
-                </div>
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img src="#" alt=""--}}
+                                                                                                   {{--class="img-fluid"></a>--}}
+                                {{--</div>--}}
+                                {{--<div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\LinhKien\CPU\Core i5\Bộ vi xử lý_ CPU Intel Core I5-8600 (3.1GHz - 4.3GHz _LGA 1151-v2) _ PhongVu.vn_files/2.jpg"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product2.jpg" alt=""--}}
+                                                                                          {{--class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Dell_Inspiron_5370_N3I3002W.html">Bộ vi xử lý_ CPU Intel Core I5-8600 (3.1GHz ---}}
+                                    {{--4.3GHz _LGA 1151-v2)</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del></del>--}}
+                                {{--6.399.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                        {{--<div class="ribbon new">--}}
+                            {{--<div class="theribbon">NEW</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\Laptop\Macbook\Laptop MacBook Pro 2018 13.3_ MR9R2_files/1.jpg"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                                {{--<div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\Laptop\Macbook\Laptop MacBook Pro 2018 13.3_ MR9R2_files/2.jpg"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product1.jpg" alt=""--}}
+                                                                                          {{--class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Dell_Inspiron_5370_N3I3002W.html">Macbook</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del></del>--}}
+                                {{--50.990.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                        {{--<div class="ribbon gift">--}}
+                            {{--<div class="theribbon">GIFT</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\LinhKien\HDD_SSD\HDD\Ổ cứng HDD Western Digital Black 4TB 3.5_ SATA 3 - WD4005FZBX _ Phong Vũ_files/1.jpg"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                                {{--<div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\LinhKien\HDD_SSD\HDD\Ổ cứng HDD Western Digital Black 4TB 3.5_ SATA 3 - WD4005FZBX _ Phong Vũ_files/2.jpg"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product2.jpg" alt=""--}}
+                                                                                          {{--class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Dell_Inspiron_5370_N3I3002W.html">Ổ cứng HDD Western Digital Black 4TB 3.5_--}}
+                                    {{--SATA 3 - WD4005FZBX</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del>$280</del>--}}
+                                {{--4.990.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                        {{--<div class="ribbon sale">--}}
+                            {{--<div class="theribbon">SALE</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                        {{--<div class="ribbon new">--}}
+                            {{--<div class="theribbon">NEW</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                        {{--<div class="ribbon gift">--}}
+                            {{--<div class="theribbon">GIFT</div>--}}
+                            {{--<div class="ribbon-background"></div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.ribbon-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
+                {{--<div class="item">--}}
+                    {{--<div class="product">--}}
+                        {{--<div class="flip-container">--}}
+                            {{--<div class="flipper">--}}
+                                {{--<div class="front"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\LinhKien\CardManHinh\GTX\Card màn hình ASUS GeForce GTX 1050Ti 4GB Cerberus OC _ PhongVu.vn_files/1.png"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                                {{--<div class="back"><a href="Dell_Inspiron_5370_N3I3002W.html"><img--}}
+                                                {{--src="img_new\New folder\LinhKien\CardManHinh\GTX\Card màn hình ASUS GeForce GTX 1050Ti 4GB Cerberus OC _ PhongVu.vn_files/2.png"--}}
+                                                {{--alt="" class="img-fluid"></a></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<a href="Dell_Inspiron_5370_N3I3002W.html" class="invisible"><img src="img/product3.jpg" alt=""--}}
+                                                                                          {{--class="img-fluid"></a>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3><a href="Dell_Inspiron_5370_N3I3002W.html">Card màn hình ASUS GeForce GTX 1050Ti 4GB--}}
+                                    {{--Cerberus OCe</a></h3>--}}
+                            {{--<p class="price">--}}
+                                {{--<del></del>--}}
+                                {{--4.660.000đ--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- /.text-->--}}
+                    {{--</div>--}}
+                    {{--<!-- /.product-->--}}
+                {{--</div>--}}
                 <!-- /.product-slider-->
             </div>
             <!-- /.container-->
