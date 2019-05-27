@@ -79,8 +79,8 @@
                 <!-- /.products-->
 
                 <div class="pages">
-                    <p class="loadMore"><a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i>
-                            Load more</a></p>
+                    {{--<p class="loadMore"><a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i>--}}
+                            {{--Load more</a></p>--}}
                     <nav aria-label="Page navigation example" class="d-flex justify-content-center">
                         <ul class="pagination">
                             <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span

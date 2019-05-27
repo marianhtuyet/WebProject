@@ -43,14 +43,12 @@ if(session_status() == PHP_SESSION_NONE)
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="fullname">Họ Tên</label>
-                                        <input id="fullname" name="fullname" type="text" class="form-control"
+                                        <label for="name">Họ tên</label>
+                                        <input id="name" name="name" type="text" class="form-control"
+                                               @if(isset($_SESSION["invoice"]))
+                                               value={{$_SESSION["invoice"][0]["invoice_name"]}}
+                                               @endif>
 
-                                             @if(isset($_SESSION["invoice"]))
-                                             value={{$_SESSION["invoice"][0]["invoice_name"]}}
-                                             @endif;
-
-                                        >
                                     </div>
                                 </div>
                             </div>
@@ -58,8 +56,8 @@ if(session_status() == PHP_SESSION_NONE)
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="house_nmber">Số nhà</label>
-                                        <input id="house_nmber" name="house_number" type="text" class="form-control"
+                                        <label for="house_number">Số nhà</label>
+                                        <input id="house_number" name="house_number" type="text" class="form-control"
                                         @if(isset($_SESSION["invoice"]))
                                              value={{$_SESSION["invoice"][0]["invoice_house_number"]}}
                                              @endif;>
@@ -102,7 +100,7 @@ if(session_status() == PHP_SESSION_NONE)
                                        >
                                     </div>
                                 </div> -->
-                        <input type="hidden" name="total" value="{{$total}}">
+                        <input type="hidden" name="total" value="{{$g_total}}">
                             </div>
                             <!-- /.row-->
                         </div>
@@ -126,7 +124,13 @@ if(session_status() == PHP_SESSION_NONE)
                                 <tbody>
                                 <tr>
                                     <td>Giá tổng đơn hàng</td>
-                                    <th>{{number_format($total,0)}}</th>
+                                    <th>
+                                        @if(isset($_SESSION["invoice"]))
+                                            {{number_format($_SESSION["invoice"][0]["invoice_total"],0)}}
+                                        @else
+                                        {{number_format($g_total,0)}}
+                                        @endif
+                                    </th>
 
                                 </tr>
                                 <tr>
@@ -139,7 +143,13 @@ if(session_status() == PHP_SESSION_NONE)
                                 </tr>
                                 <tr class="total">
                                     <td>Tổng</td>
-                                    <th>{{number_format($total + 20000,0)}}</th>
+                                    <th>
+                                        @if(isset($_SESSION["invoice"]))
+                                            {{number_format($_SESSION["invoice"][0]["invoice_total"] + 20000,0)}}
+                                        @else
+                                            {{number_format($g_total + 20000,0)}}
+                                        @endif
+                                       </th>
                                 </tr>
                                 </tbody>
                             </table>

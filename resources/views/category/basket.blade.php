@@ -11,7 +11,7 @@
         <div class="row">
             <div id="basket" class="col-lg-12">
                 <div class="box">
-                    <form method="get" action="{{route('checkout1.get')}}">
+                    {{--<form method="get" action="{{route('checkout1.get')}}">--}}
 {{--                        {{csrf_field()}}--}}
                         <h1>Shopping cart</h1>
                         <?php $total = 0; ?>
@@ -73,13 +73,13 @@
                                                      class="btn btn-outline-secondary"><i
                                                 class="fa fa-chevron-left"></i> Continue shopping</a></div>
                                 <div class="right">
-                                    <button class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart
-                                    </button>
-                                    <button type="submit" class="btn btn-primary">Proceed to checkout <i
-                                                class="fa fa-chevron-right"></i></button>
+                                    <a href="{{route('basket.get')}}" class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart
+                                    </a>
+                                    <a href="{{route('checkout1.get', [$total])}}" class="btn btn-primary">Proceed to checkout <i
+                                                class="fa fa-chevron-right"></i></a>
                                 </div>
                             </div>
-                    </form>
+                    {{--</form>--}}
                 </div>
 
             </div>

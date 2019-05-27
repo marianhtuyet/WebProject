@@ -42,7 +42,7 @@
                         <div class="box">
 
                             <h3 class="text-center">{{$detail->name}}</h3>
-                            <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
+                            <p class="goToDescription"><a href="#details" class="scroll-to">Kéo xuống để xem thông tin chi tiết sản phẩm hoặc nhấp tại đây!</a></p>
                             <p class="price">{{number_format($detail->cost, 0)}}đ</p>
 
 

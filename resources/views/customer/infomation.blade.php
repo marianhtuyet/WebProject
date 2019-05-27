@@ -46,6 +46,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
                 <!-- /.col-lg-3-->
                 <!-- *** CUSTOMER MENU END ***-->
+                <div class="banner"><img src="assets/img_new/company4.jpg" alt="menu picture" class="img-fluid"></div>
             </div>
             <div class="col-lg-9">
                 <div class="box">
