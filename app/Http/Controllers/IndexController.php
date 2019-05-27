@@ -14,7 +14,7 @@ class IndexController extends Controller
 
     public function getList()
     {
-        $bestsale = Products::where('best_sale', '1')->get();
+            $bestsale = Products::where('best_sale', '1')->get();
         return view('trangchu.index', compact('bestsale'));
     }
 
@@ -231,6 +231,7 @@ class IndexController extends Controller
         }
 
         $total = $request->grand_total;
+        echo "tong gia tri la ".$total;
 //        lay gia tri tong hoa don
         return view('checkout.checkout1', compact('total'));
     }
@@ -362,7 +363,8 @@ class IndexController extends Controller
         }
         print_r($_SESSION["invoice"][0]);
         echo "<script>alert('Đã lưu đơn hàng. Xin cảm ơn!')</script>";
-        return view("trangchu.index");
+        $bestsale = \App\Products::where('best_sale', '1')->get();
+        return view('trangchu.index', compact('bestsale'));
 
 
     }

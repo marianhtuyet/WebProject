@@ -9,7 +9,7 @@ class CustomerController extends Controller
 {
     public function checkAccount(Request $request)
     {
-
+        $bestsale = \App\Products::where('best_sale', '1')->get();
         $customer = customer::where('email', $request->email_modal)->first();
 //        echo "$customer";
 
@@ -21,7 +21,7 @@ class CustomerController extends Controller
                 $item_array = array(
                     'cus_id' => $customer->id,
                     'cus_name' => $customer->name,
-                    'cus_phone_number' => $customer->phone_number,
+                    'cus_phone_number' => $customer->phonenumber,
                     'cus_house_number' => $customer->house_number,
                     'cus_street' => $customer->street,
                     'cus_city' => $customer->city,
@@ -33,16 +33,17 @@ class CustomerController extends Controller
             }
         }
 
-        return view('trangchu.index');
+        return view('trangchu.index', compact('bestsale'));
     }
 
     public function Logout()
     {
+        $bestsale = \App\Products::where('best_sale', '1')->get();
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
         session_destroy();
-        return view('trangchu.index');
+        return view('trangchu.index' , compact('bestsale'));
     }
 
 
@@ -53,6 +54,7 @@ class CustomerController extends Controller
 
     public function postRegister(Request $request)
     {
+        $bestsale = \App\Products::where('best_sale', '1')->get();
         $customer = new customer();
         $customer->name = $request->name;
         $customer->email = $request->email;
@@ -74,7 +76,7 @@ class CustomerController extends Controller
         );
 //            echo '<script>alert("chhuaw có session")</script>';
         $_SESSION["customer"][0] = $item_array;
-        return view('trangchu.index');
+        return view('trangchu.index',compact('bestsale'));
     }
 
     public function InfoCustomer()

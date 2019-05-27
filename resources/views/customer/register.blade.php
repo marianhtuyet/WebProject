@@ -22,10 +22,10 @@
                     <h1>Tạo tài khoản</h1>
                     <p class="lead">Bạn chưa tạo tài khoản?</p>
                     <p>Mau chóng đăng ký thành viên để nhận được nhiều ưu đãi và khuyến mãi từ cửa hàng. Đừng lo việc đăng ký chỉ mất chưa đầy 1 phút!</p>
-                    <p class="text-muted">Nếu có nhu cầu liên hệ hoặc khiếu nại vui lòng tới <a href="contact.html">trang liên hệ</a>, trung tâm chăm sóc khách hàng của chúng tôi làm việc 24/7.</p>
+                    <p class="text-muted">Nếu có nhu cầu liên hệ hoặc khiếu nại vui lòng tới <a href="{{route('contact.info')}}">trang liên hệ</a>, trung tâm chăm sóc khách hàng của chúng tôi làm việc 24/7.</p>
                     <hr>
                     <form action="{{route('register.post')}}" method="post">
-                        {{csrf_field()}}}
+                        {{csrf_field()}}
                         <div class="form-group">
                             <label for="name">Tên</label>
                             <input id="name" name="name" type="text" class="form-control" placeholder="Nguyễn Văn A">
@@ -50,7 +50,7 @@
                     <p class="lead">Bạn đã có tài khoản?</p>
                     <p class="text-muted">Đăng nhập ngay để nhận nhiều ưu đãi từ cửa hàng.</p>
                     <hr>
-                    <form action="customer-orders.html" method="post">
+                    <form action="{{route('customer.account')}}" method="post">
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input id="email" name="email_modal" type="text" class="form-control" placeholder="abc123456@gmail.com">

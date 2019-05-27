@@ -58,7 +58,7 @@
 
                                     <tr>
                                         <td colspan="4" align="right">Total</td>
-                                        <td colspan="2" class="grand_total">
+                                        <td colspzn="2" class="grand_total">
                                             {{number_format($total, 0)}} vnd
                                         </td>
                                         <input type="hidden" name="grand_total" class="grand_total_val"
