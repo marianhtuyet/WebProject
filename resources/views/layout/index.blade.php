@@ -11,6 +11,7 @@
 @yield('title')
 <!-- Bootstrap CSS-->
     @yield('style')
+
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
@@ -42,6 +43,7 @@
 
 
 </header>
+
 <div id="all">
     <div id="content">
         @yield('content')

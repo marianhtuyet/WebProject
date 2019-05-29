@@ -6,7 +6,9 @@ if(session_status() == PHP_SESSION_NONE)
     }
 
 ?>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+{{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />--}}
+{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--}}
 
 <div id="top">
     <div class="container">
@@ -253,13 +255,45 @@ if(session_status() == PHP_SESSION_NONE)
 <div id="search" class="collapse">
     <div class="container">
         <form role="search" class="ml-auto">
+            {{ csrf_field() }}
             <div class="input-group">
-                <input type="text" placeholder="Search" class="form-control">
+                <input type="text" class="form-control" name="search" id="search_text" autocomplete="off" placeholder="Điền tên sản phẩm">
                 <div class="input-group-append">
                     <!-- input-group-append giúp đoạn text search và nút search dính liền nhau -->
                     <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
                 </div>
+                <div id="ListProduct">
+                </div>
+
             </div>
         </form>
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+
+        $('#search_text').keyup(function(){
+            var query = $(this).val();
+            if(query != '')
+            {
+                var _token = $('input[name="_token"]').val();
+                $.ajax({
+                    url:"{{ route('header.search') }}",
+                    method:"POST",
+                    data:{query:query, _token:_token},
+                    success:function(data){
+                        $('#ListProduct').fadeIn();
+                        $('#ListProduct').html(data);
+                    }
+                });
+            }
+        });
+
+        $(document).on('click', 'li', function(){
+            $('#ListProduct').val($(this).text());
+            $('#ListProduct').fadeOut();
+        });
+
+    });
+
+</script>

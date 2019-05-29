@@ -30,6 +30,7 @@ class IndexController extends Controller
 //        return view('acer.category_acer_nitro');
     }
 
+
     public function getCategory_acer_predator()
     {
         $product = Products::where('id_product', 'acer_2')->get();
@@ -233,7 +234,7 @@ class IndexController extends Controller
             $g_total = $_SESSION["invoice"][0]["invoice_total"];
         else
         $g_total = $request->total;
-//        print_r($_SESSION["invoice"]);
+        print_r($_SESSION["invoice"][0]["invoice_name"]);
 //        lay gia tri tong hoa don
         return view('checkout.checkout1', compact('g_total'));
     }
@@ -285,7 +286,7 @@ class IndexController extends Controller
         $_SESSION["invoice"][0] = $item_array;
 
 //
-//        print_r($_SESSION["invoice"][0]);
+        print_r($_SESSION["invoice"][0]);
         return view('checkout.checkout2');
     }
 
@@ -380,12 +381,28 @@ class IndexController extends Controller
     {
 
 }
+    public function getDataSearch(Request $request)
+    {
+        if($request->get('query'))
+        {
 
+            $query = $request->get('query');
+            $data = Products::where('name', 'LIKE', "%{$query}%")
+                ->get();
+            $output = '<ul class="dropdown-menu" style="display: inline">';
+            foreach($data as $row)
+            {
+
+                $output .= '
+       <li><a href="'.route('category.detail', [$row->id]).'">'.$row->name.'</a></li>
+       ';
+            }
+            $output .= '</ul>';
+            echo $output;
+        }
+    }
 
 }
 
 
-//public function AddToCardCategory(Request $request)
-//{
-//
-//}
+

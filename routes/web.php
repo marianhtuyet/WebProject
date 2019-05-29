@@ -105,3 +105,10 @@ Route::get('contact/text', 'IndexController@getText' )->name('contact.text');
 
 //hamf lay san pham duoc mua nhieu nhat
 Route::get('index/bestsale', 'IndexController@getBestSale')->name('index.bestsale');
+
+
+//search
+Route::post('search', 'IndexController@getDataSearch')->name('header.search');
+
+Route::get('/autocomplete', 'AcerController@index');
+Route::post('/autocomplete/fetch', 'AcerController@fetch')->name('autocomplete.fetch');
