@@ -381,6 +381,16 @@ class IndexController extends Controller
     {
 
 }
+    public function getAdmin()
+    {
+        return view('admin.password');
+    }
+    public function getProduct()
+    {
+        return view('admin.product');
+    }
+
+
     public function getDataSearch(Request $request)
     {
         if($request->get('query'))
@@ -401,6 +411,118 @@ class IndexController extends Controller
             echo $output;
         }
     }
+    //// upload single file
+
+
+
+
+
+// upload multiple files
+    function uploadImages(){
+        if (isset($_POST["submit"])) {
+            // image mime to be checked
+            $imagetype = array(image_type_to_mime_type(IMAGETYPE_GIF), image_type_to_mime_type(IMAGETYPE_JPEG),
+                image_type_to_mime_type(IMAGETYPE_PNG), image_type_to_mime_type(IMAGETYPE_UNKNOWN));
+            $FOLDER = "../public/assets/img/";
+            $myfile = $_FILES["file"];
+            $select_val = $_POST['select-nho'];
+            $max = Products::where('id_product',$select_val )->max('id_type');
+            $max +=1;
+//            echo "$max";
+//            echo "$select_val";
+            $keepName = false; // change this for file name.
+            $response = array();
+            $k=1;
+            for ($i = 0; $i < count($_FILES["file"]["name"]); $i++) {
+                if ($myfile["name"][$i] <> "" && $myfile["error"][$i] == 0) {
+                    // file is ok
+                    if (in_array($myfile["type"][$i],$imagetype)) {
+                        //Set file name
+                        if ($keepName) {
+                            $file_name = $myfile["name"][$i];
+                        } else {
+                            // get extention and set unique name
+//                            $file_extention = @strtolower(@end(@explode(".", $myfile["name"][$i])));
+                            $file_name =$select_val.'_'.$max.'_'.$k . '.' . 'jpg'; // Thư mục sẽ lưu file
+                        }
+                        if (move_uploaded_file($myfile["tmp_name"][$i], $FOLDER . $file_name) === FALSE) {
+                            //Set Original File Name if Upload Error
+                            $response[] = array('error' => true, 'msg' => "Error While Uploading the File", 'fileName' => $myfile["name"][$i]);
+
+                        }
+//                        else {
+//                            // Set Name Used to Store file on Server
+////                            echo "File Uploaded: ".$file_name."<br/>";
+//                        }
+                    } else {
+                        //Set Original File Name if Invalid Image Type
+                        $response[] = array('error' => true, 'msg' => " Invalid Image Type.", 'fileType' => $myfile["type"][$i]);
+                    }
+                    $k++;
+                }
+            }
+            //echo json_encode($response);
+            $product = new Products();
+            $product->name = $_POST['nameproduct'];
+            $product->cost = $_POST['price'];
+            $product->quantity = $_POST['quantity'];
+            $product->description =$_POST['describe'];
+            $product->id_type = $max;
+            $product->id_product = $select_val;
+//            echo "$product";
+            $product->save();
+
+        }
+        echo "<script>alert('Đã thêm sản phẩm')</script>";
+        return view('admin.product');
+    }
+//    function uploadImages(){
+//        if (isset($_POST["submit"])) {
+//            // image mime to be checked
+//            $imagetype = array(image_type_to_mime_type(IMAGETYPE_GIF), image_type_to_mime_type(IMAGETYPE_JPEG),
+//                image_type_to_mime_type(IMAGETYPE_PNG), image_type_to_mime_type(IMAGETYPE_UNKNOWN));
+//            $FOLDER = "../public/assets/img/";
+//            if((isset($_FILES["file"])))
+//            {
+//                echo "ok";
+//            }
+//            else
+//            {
+//                echo "koo co file";
+//            }
+////            $myfile = $_FILES["file"];
+//            $keepName = false; // change this for file name.
+//            $response = array();
+//            $k=1;
+////            for ($i = 0; $i < count($_FILES["file"]["name"]); $i++) {
+////                if ($myfile["name"][$i] <> "" && $myfile["error"][$i] == 0) {
+////                    // file is ok
+////                    if (in_array($myfile["type"][$i],$imagetype)) {
+////                        //Set file name
+////                        if ($keepName) {
+////                            $file_name = $myfile["name"][$i];
+////                        } else {
+////                            // get extention and set unique name
+////                            $file_extention = @strtolower(@end(@explode(".", $myfile["name"][$i])));
+////                            $file_name = '_'.$k . '.' . $file_extention; // Thư mục sẽ lưu file
+////                        }
+////                        if (move_uploaded_file($myfile["tmp_name"][$i], $FOLDER . $file_name) === FALSE) {
+////                            //Set Original File Name if Upload Error
+////                            $response[] = array('error' => true, 'msg' => "Error While Uploading the File", 'fileName' => $myfile["name"][$i]);
+////                        } else {
+////                            // Set Name Used to Store file on Server
+////                            echo "File Uploaded: ".$file_name."<br/>";
+////                        }
+////                    } else {
+////                        //Set Original File Name if Invalid Image Type
+////                        $response[] = array('error' => true, 'msg' => " Invalid Image Type.", 'fileType' => $myfile["type"][$i]);
+////                    }
+////                    $k++;
+////                }
+////            }
+//            //echo json_encode($response);
+//        }
+//    }
 
 }
 

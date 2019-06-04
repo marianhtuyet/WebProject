@@ -112,3 +112,13 @@ Route::post('search', 'IndexController@getDataSearch')->name('header.search');
 
 Route::get('/autocomplete', 'AcerController@index');
 Route::post('/autocomplete/fetch', 'AcerController@fetch')->name('autocomplete.fetch');
+
+
+
+Route::get('admin/password', 'IndexController@getAdmin' )->name('admin.password');
+Route::get('admin/product', 'IndexController@getProduct' )->name('admin.product');
+//Route::post('admin/product/result','IndexController@uploadImages')->name('uploadImages');
+
+
+
+Route::post('admin/product/addProduct','IndexController@uploadImages')->name('admin.uploadImages');
