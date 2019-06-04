@@ -94,6 +94,7 @@ Route::get('index/', 'CustomerController@Logout')->name('customer.logout');
 
 Route::post('customer/changepass','CustomerController@ChangePassword')->name('customer.changepass');
 Route::post('customer/changeinfo','CustomerController@ChangeInfomation')->name('customer.changeinfo');
+Route::get('customer/order','CustomerController@getInvoice' )->name('customer.invoice');
 //ham dang ky
 
 

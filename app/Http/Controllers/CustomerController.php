@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\customer;
+use App\Invoice;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
@@ -129,6 +130,12 @@ class CustomerController extends Controller
 //        print_r($_SESSION["customer"][0]);
         return view('customer.infomation');
 
+    }
+    public function  getInvoice()
+    {
+        $invoice = Invoice::where('state', 0)->get();
+//        print_r(count($invoice));
+        return view('admin.order', compact('invoice'));
     }
 
 
