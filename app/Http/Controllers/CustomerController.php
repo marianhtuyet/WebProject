@@ -133,9 +133,21 @@ class CustomerController extends Controller
     }
     public function  getInvoice()
     {
+        // all invoice of admin
         $invoice = Invoice::where('state', 0)->get();
 //        print_r(count($invoice));
         return view('admin.order', compact('invoice'));
+    }
+    public function ConfirmInvoice(Request $request)
+    {
+        if($request->ajax())
+        {
+            $invoice = Invoice::find($request->_id);
+
+            $invoice->state=1;
+//            print_r($invoice);
+            $invoice->save();
+        }
     }
 
 

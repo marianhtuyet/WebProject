@@ -123,3 +123,4 @@ Route::get('admin/product', 'IndexController@getProduct' )->name('admin.product'
 
 
 Route::post('admin/product/addProduct','IndexController@uploadImages')->name('admin.uploadImages');
+Route::get('ConfirmInvoice','CustomerController@ConfirmInvoice')->name('confirm.invoice');

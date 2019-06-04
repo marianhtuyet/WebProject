@@ -36,7 +36,8 @@ if (session_status() == PHP_SESSION_NONE) {
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">
-                            <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i> My orders</a>
+                            <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
+                                My orders</a>
                             {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
                             <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
                             <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
@@ -67,13 +68,15 @@ if (session_status() == PHP_SESSION_NONE) {
                             </thead>
                             <tbody>
                             @foreach($invoice as $key=>$value)
-                            <tr>
-                                <th>{{$value->id}}</th>
-                                <td>{{$value->create_date}}</td>
-                                <td>{{$value->total}}</td>
-                                <td class="status"><span class="badge badge-warning">Chưa xác nhận</span></td>
-                                <td class="btnConfirm"><a  class="btn btn-primary btn-sm" onclick="Confirm(this)">Xác nhận</a></td>
-                            </tr>
+                                <tr>
+                                    <input type="hidden" class="id_invoice" value="{{$value->id}}">
+                                    <th >{{$value->id}}</th>
+                                    <td>{{$value->create_date}}</td>
+                                    <td>{{$value->total}}</td>
+                                    <td class="status"><span class="badge badge-warning">Chưa xác nhận</span></td>
+                                    <td class="btnConfirm"><a class="btn btn-primary btn-sm" onclick="Confirm(this)">Xác
+                                            nhận</a></td>
+                                </tr>
                             @endforeach
 
                             </tbody>
@@ -87,14 +90,26 @@ if (session_status() == PHP_SESSION_NONE) {
 
 @endsection
 @section('script-ori')
-<script>
-    function Confirm(obj) {
-        console.log('OK');
-        let $table = $(obj).parent().parent();
-        $table.find(".status").html('<span class="badge badge-success">Đã xác nhận</span>');
-        $table.find(".btnConfirm").html('<a  class="btn btn-muted btn-sm" disabled="True">Xác nhận</a>');
-    }
-</script>
+    <script>
+        function Confirm(obj) {
+            console.log('OK');
+            let $table = $(obj).parent().parent();
+            $table.find(".status").html('<span class="badge badge-success">Đã xác nhận</span>');
+            $table.find(".btnConfirm").html('<a  class="btn btn-muted btn-sm" disabled="True">Xác nhận</a>');
+            let id = $table.find(".id_invoice").val();
+            $.ajax({
+                    url: "{{route('confirm.invoice')}}",
+                    type: 'GET',
+                    async: true,
+                data: {'_id': id},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                }
+            )
+            ;
+        }
+    </script>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
