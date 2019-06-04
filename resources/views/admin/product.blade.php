@@ -3,7 +3,7 @@
 
 @endsection
 @section('style')
-
+    <script src="assets/ckeditor/ckeditor.js"></script>
 @endsection
 @section('content')
     <div class="container">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <!-- *** PAGES MENU END ***-->
-                <div class="banner"><img src="img_new/company4.jpg" alt="menu picture" class="img-fluid"></div>
+                <div class="banner"><img src="assets/img_new/company4.jpg" alt="menu picture" class="img-fluid"></div>
             </div>
             <div class="col-lg-9">
                 <div id="product" class="box">
@@ -105,7 +105,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="describe">Mô tả</label>
-                                    <textarea id="describe" name="describe" class="form-control" rows="10"></textarea>
+                                    <textarea id="describe" name="describe" class="form-control ckeditor" rows="10"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -275,6 +275,19 @@
                 select_nho.add(option28);
             }
         }
+
+    </script>
+    <script>
+        CKEDITOR.config.toolbar = [
+
+            { name: 'document',  items:[ 'Source','-','DocProps','Preview','Print','-','Templates' ] },
+
+            {name: 'clipboard', items : [ 'Cut','Copy','Paste','-','Undo','Redo' ] },
+            '/',
+            { name: 'styles' , items : [ 'Styles','Format','Font','FontSize' ]},
+
+            { name: 'links',  items:[ 'Link','Unlink','Anchor' ] }
+        ];
     </script>
 @endsection
 @section('script-ori')
