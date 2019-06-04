@@ -234,7 +234,7 @@ class IndexController extends Controller
             $g_total = $_SESSION["invoice"][0]["invoice_total"];
         else
         $g_total = $request->total;
-        print_r($_SESSION["invoice"][0]["invoice_name"]);
+//        print_r($_SESSION["invoice"][0]["invoice_name"]);
 //        lay gia tri tong hoa don
         return view('checkout.checkout1', compact('g_total'));
     }
@@ -286,7 +286,7 @@ class IndexController extends Controller
         $_SESSION["invoice"][0] = $item_array;
 
 //
-        print_r($_SESSION["invoice"][0]);
+//        print_r($_SESSION["invoice"][0]);
         return view('checkout.checkout2');
     }
 
