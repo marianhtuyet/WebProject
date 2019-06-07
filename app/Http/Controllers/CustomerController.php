@@ -28,12 +28,16 @@ class CustomerController extends Controller
                     'cus_city' => $customer->city,
                     'cus_email' => $customer->email,
                     'cus_password' => $customer->password,
+                    'cus_role' => $customer->role,
                 );
 //            echo '<script>alert("chhuaw có session")</script>';
                 $_SESSION["customer"][0] = $item_array;
             }
         }
-
+        if ($_SESSION["customer"][0]['cus_role'] == 1) {
+            $invoice = Invoice::where('state', 0)->get();
+            return view('admin.order', compact('invoice'));
+        }
         return view('trangchu.index', compact('bestsale'));
     }
 
@@ -44,7 +48,7 @@ class CustomerController extends Controller
             session_start();
         }
         session_destroy();
-        return view('trangchu.index' , compact('bestsale'));
+        return view('trangchu.index', compact('bestsale'));
     }
 
 
@@ -77,7 +81,7 @@ class CustomerController extends Controller
         );
 //            echo '<script>alert("chhuaw có session")</script>';
         $_SESSION["customer"][0] = $item_array;
-        return view('trangchu.index',compact('bestsale'));
+        return view('trangchu.index', compact('bestsale'));
     }
 
     public function InfoCustomer()
@@ -131,20 +135,21 @@ class CustomerController extends Controller
         return view('customer.infomation');
 
     }
-    public function  getInvoice()
+
+    public function getInvoice()
     {
         // all invoice of admin
         $invoice = Invoice::where('state', 0)->get();
 //        print_r(count($invoice));
         return view('admin.order', compact('invoice'));
     }
+
     public function ConfirmInvoice(Request $request)
     {
-        if($request->ajax())
-        {
+        if ($request->ajax()) {
             $invoice = Invoice::find($request->_id);
 
-            $invoice->state=1;
+            $invoice->state = 1;
 //            print_r($invoice);
             $invoice->save();
         }
