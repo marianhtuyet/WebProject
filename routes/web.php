@@ -123,6 +123,14 @@ Route::get('admin/product', 'IndexController@getProduct' )->name('admin.product'
 
 
 Route::post('admin/product/addProduct','IndexController@uploadImages')->name('admin.uploadImages');
-Route::get('ConfirmInvoice','CustomerController@ConfirmInvoice')->name('confirm.invoice');
+Route::get('ConfirmInvoice','AdminController@ConfirmInvoice')->name('confirm.invoice');
+Route::get('CancelInvoice','AdminController@CancelInvoice')->name('cancel.invoice');
 
 Route::get('testrole','AdminController@testrole');
+
+
+Route::get('admin/list_product_table','IndexController@get_list_product')->name('list_product');
+Route::get('admin/list_product','IndexController@getList_product_page')->name('list_product_page');
+Route::get('admin/detail_product/{id}','IndexController@get_detail_product')->name('detail_product');
+Route::post('admin/update_detail_product/{id}','IndexController@update_detail_product')->name('update_detail_product');
+Route::get('admin/delete_product/{id}','IndexController@delete_product')->name('delete_product');

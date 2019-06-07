@@ -476,54 +476,116 @@ class IndexController extends Controller
         echo "<script>alert('Đã thêm sản phẩm')</script>";
         return view('admin.product');
     }
-//    function uploadImages(){
-//        if (isset($_POST["submit"])) {
-//            // image mime to be checked
-//            $imagetype = array(image_type_to_mime_type(IMAGETYPE_GIF), image_type_to_mime_type(IMAGETYPE_JPEG),
-//                image_type_to_mime_type(IMAGETYPE_PNG), image_type_to_mime_type(IMAGETYPE_UNKNOWN));
-//            $FOLDER = "../public/assets/img/";
-//            if((isset($_FILES["file"])))
-//            {
-//                echo "ok";
-//            }
-//            else
-//            {
-//                echo "koo co file";
-//            }
-////            $myfile = $_FILES["file"];
-//            $keepName = false; // change this for file name.
-//            $response = array();
-//            $k=1;
-////            for ($i = 0; $i < count($_FILES["file"]["name"]); $i++) {
-////                if ($myfile["name"][$i] <> "" && $myfile["error"][$i] == 0) {
-////                    // file is ok
-////                    if (in_array($myfile["type"][$i],$imagetype)) {
-////                        //Set file name
-////                        if ($keepName) {
-////                            $file_name = $myfile["name"][$i];
-////                        } else {
-////                            // get extention and set unique name
-////                            $file_extention = @strtolower(@end(@explode(".", $myfile["name"][$i])));
-////                            $file_name = '_'.$k . '.' . $file_extention; // Thư mục sẽ lưu file
-////                        }
-////                        if (move_uploaded_file($myfile["tmp_name"][$i], $FOLDER . $file_name) === FALSE) {
-////                            //Set Original File Name if Upload Error
-////                            $response[] = array('error' => true, 'msg' => "Error While Uploading the File", 'fileName' => $myfile["name"][$i]);
-////                        } else {
-////                            // Set Name Used to Store file on Server
-////                            echo "File Uploaded: ".$file_name."<br/>";
-////                        }
-////                    } else {
-////                        //Set Original File Name if Invalid Image Type
-////                        $response[] = array('error' => true, 'msg' => " Invalid Image Type.", 'fileType' => $myfile["type"][$i]);
-////                    }
-////                    $k++;
-////                }
-////            }
-//            //echo json_encode($response);
-//        }
-//    }
 
+
+    public function getList_product_page()
+    {
+        return view('admin.list_product');
+    }
+
+    public function get_list_product()
+    {
+        $var = $_GET['_id_type'];
+        $product = Products::where('id_product', $var)->get();
+        echo "<thead>";
+        echo "<tr>
+                  <th>ID</th>
+                  <th>Tên sản phẩm</th>
+                  <th>Giá</th>
+                  <th>Sửa</th>
+                  <th>Xóa</th>
+              </tr>
+              </thead>
+              <tbody>";
+        foreach ($product as $key => $value) {
+            echo "<tr>";
+            echo "<td>";
+            echo $value->id;
+            echo "</td>";
+            echo "<td>";
+            echo $value->name;
+            echo "</td>";
+            echo "<td>";
+            echo $value->cost;
+            echo "</td>";
+            echo "<td class=\"btnConfirm\">";
+            echo '<a  class="btn btn-primary btn-sm" href="' . route('detail_product', [$value->id]) . '" >';
+            echo "Sửa";
+            echo "</a>";
+            echo "</td>";
+            echo "<td class=\"btnConfirm\">";
+            echo '<a class="btn btn-primary btn-sm" href="' . route('delete_product', [$value->id]) . '" >';
+            echo "Xóa";
+            echo "</a>";
+            echo "</td>";
+        }
+        echo "</tbody>";
+
+    }
+
+    public function get_detail_product($id)
+    {
+        $product = Products::find($id);
+        return view('admin.detail_product', compact('product'));
+    }
+
+    public function update_detail_product($id)
+    {
+        if (isset($_POST["submit"])) {
+            // image mime to be checked
+            $imagetype = array(image_type_to_mime_type(IMAGETYPE_GIF), image_type_to_mime_type(IMAGETYPE_JPEG),
+                image_type_to_mime_type(IMAGETYPE_PNG), image_type_to_mime_type(IMAGETYPE_UNKNOWN));
+            $FOLDER = "../public/assets/img/";
+            $myfile = $_FILES["file"];
+            $product = Products::find($id);
+
+            $select_val = $product->id_product;
+
+            $keepName = false; // change this for file name.
+            $response = array();
+            $k = 1;
+            if (count($_FILES["file"]["name"]) > 0) {
+                for ($i = 0; $i < count($_FILES["file"]["name"]); $i++) {
+                    if ($myfile["name"][$i] <> "" && $myfile["error"][$i] == 0) {
+                        // file is ok
+                        if (in_array($myfile["type"][$i], $imagetype)) {
+                            //Set file name
+                            if ($keepName) {
+                                $file_name = $myfile["name"][$i];
+                            } else {
+                                // get extention and set unique name
+//                            $file_extention = @strtolower(@end(@explode(".", $myfile["name"][$i])));
+                                $file_name = $product->id_product . '_' . $product->id_type . '_' . $k . '.' . 'jpg'; // Thư mục sẽ lưu file
+                            }
+                            if (move_uploaded_file($myfile["tmp_name"][$i], $FOLDER . $file_name) === FALSE) {
+                                //Set Original File Name if Upload Error
+                                $response[] = array('error' => true, 'msg' => "Error While Uploading the File", 'fileName' => $myfile["name"][$i]);
+
+                            }
+                        } else {
+                            $response[] = array('error' => true, 'msg' => " Invalid Image Type.", 'fileType' => $myfile["type"][$i]);
+                        }
+                        $k++;
+                    }
+                }
+
+            }
+
+            $product->name = $_POST['nameproduct'];
+            $product->cost = $_POST['price'];
+            $product->quantity = $_POST['quantity'];
+            $product->description = $_POST['describe'];
+            $product->save();
+            echo '<script>alert("Sửa thành công")</script>';
+            return view('admin.list_product');
+        }
+    }
+    public function delete_product($id){
+        Products::find($id)->delete();
+
+       return redirect()->back();
+
+    }
 }
 
 

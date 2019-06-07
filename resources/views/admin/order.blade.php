@@ -22,6 +22,7 @@ if (session_status() == PHP_SESSION_NONE) {
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li aria-current="page" class="breadcrumb-item active">My order</li>
+
                     </ol>
                 </nav>
             </div>
@@ -40,6 +41,10 @@ if (session_status() == PHP_SESSION_NONE) {
                                 My orders</a>
                             {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
                             <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
+                            <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản
+                                    phẩm mới</a></li>
+                            <li><a href="" class="nav-link"><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a></li>
+                            <li><a href="#" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
                             <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
                                 Logout</a>
                         </ul>
@@ -56,7 +61,7 @@ if (session_status() == PHP_SESSION_NONE) {
                     {{--<p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>--}}
                     <hr>
                     <div class="table-responsive">
-                        <table  class="table table-hover">
+                        <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th>Số hóa đơn</th>
@@ -70,12 +75,27 @@ if (session_status() == PHP_SESSION_NONE) {
                             @foreach($invoice as $key=>$value)
                                 <tr>
                                     <input type="hidden" class="id_invoice" value="{{$value->id}}">
-                                    <th >{{$value->id}}</th>
+                                    <th>{{$value->id}}</th>
                                     <td>{{$value->create_date}}</td>
                                     <td>{{$value->total}}</td>
-                                    <td class="status"><span class="badge badge-warning">Chưa xác nhận</span></td>
-                                    <td class="btnConfirm"><a class="btn btn-primary btn-sm" onclick="Confirm(this)">Xác
-                                            nhận</a></td>
+                                    @if($value->state==0)
+                                        <td class="status"><span class="badge badge-warning">Chưa xác nhận</span></td>
+                                        <td class="btnConfirm"><a class="btn btn-primary btn-sm"
+                                                                  onclick="Confirm(this)">Xác
+                                                nhận</a></td>
+                                        <td class="btnCancelation"><a class="btn btn-primary btn-sm"
+                                                                      onclick="Cancelation(this)">Hủy </a></td>
+                                    @elseif($value->state ==1)
+                                        <td  class="status"><span class="badge badge-success">Đã xác nhận</span></td>
+                                        <td class="btnConfirm"></td>
+                                        <td class="btnCancelation"><a class="btn btn-primary btn-sm"
+                                                                      onclick="Cancelation(this)">Hủy </a></td>
+
+                                    @else
+                                        <td  class="status" ><span class="badge badge-danger">Đã hủy đơn hàng</span></td>
+                                        <td class="btnConfirm"><a class="btn btn-muted btn-sm" disabled="True">Đã hủy</a></td>
+                                        <td></td>
+                                    @endif
                                 </tr>
                             @endforeach
 
@@ -101,13 +121,32 @@ if (session_status() == PHP_SESSION_NONE) {
                     url: "{{route('confirm.invoice')}}",
                     type: 'GET',
                     async: true,
-                data: {'_id': id},
+                    data: {'_id': id},
                     success: function (data) {
                         console.log(data);
                     }
                 }
             )
             ;
+        }
+
+        function Cancelation(obj) {
+            console.log('cancel');
+            let $table = $(obj).parent().parent();
+            $table.find(".status").html('<span class="badge badge-danger">Đã hủy đơn hàng</span>');
+            $table.find(".btnConfirm").html('<a  class="btn btn-muted btn-sm" disabled="True">Đã hủy</a>');
+            $table.find(".btnCancelation").html('<a  class="btn btn-muted btn-sm" disabled="True"></a>');
+            let id = $table.find(".id_invoice").val();
+            $.ajax({
+                    url: "{{route('cancel.invoice')}}",
+                    type: 'GET',
+                    async: true,
+                    data: {'_id': id},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                }
+            );
         }
     </script>
 
