@@ -56,7 +56,7 @@ if (session_status() == PHP_SESSION_NONE) {
                     {{--<p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>--}}
                     <hr>
                     <div class="table-responsive">
-                        <table class="table table-hover">
+                        <table  class="table table-hover">
                             <thead>
                             <tr>
                                 <th>Số hóa đơn</th>
