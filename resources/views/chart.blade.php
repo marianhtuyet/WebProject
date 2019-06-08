@@ -36,25 +36,15 @@ if (session_status() == PHP_SESSION_NONE) {
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">
-                            @if( $_SESSION["customer"][0]["cus_role"]==1)
-                                <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
-                                    My orders</a>
-                                {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
-                                <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
-                                <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản phẩm mới</a></li>
-                                <li><a href="" class="nav-link" ><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a> </li>
-                                <li><a href="chart" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
-                                <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
-                                    Logout</a>
-                            @else
-                                {{--<a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>--}}
-                                {{--My orders</a>--}}
-                                {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
-                                <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
-                                <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
-                                    Logout</a>
-
-                            @endif
+                            <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
+                                Đơn hàng</a>
+                            {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
+                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> Tài khoản</a>
+                            <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản phẩm mới</a></li>
+                            <li><a href="{{route('list_product_page')}}" class="nav-link" ><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a> </li>
+                            <li><a href="{{route('chart')}}" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
+                            <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
+                                Logout</a>
                         </ul>
                     </div>
                 </div>
@@ -74,7 +64,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         </div>
                     </div>
                 </form>
-                <button class="btn btn-success" onclick="thongke()" style="margin: 10px 0px">Search</button>
+                <button class="btn btn-success" onclick="thongke()" style="margin: 10px 0px">Tìm kiếm</button>
                 <br>
                 <div id="container" data-order="{{ $orderYear }}"></div>
                 <br>

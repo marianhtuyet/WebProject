@@ -28,9 +28,16 @@
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">
-                            <li><a href="{{route('admin.password')}}" class="nav-link">Đổi mật khẩu</a></li>
-                            <li><a href="{{route('admin.product')}}" class="nav-link">Sản phẩm</a></li>
-                            <li><a href="#" class="nav-link">Thống kê</a></li>
+                            <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
+                                Đơn hàng</a>
+                            {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
+                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> Tài khoản</a>
+                            <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản
+                                    phẩm mới</a></li>
+                            <li><a href="" class="nav-link"><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a></li>
+                            <li><a href="#" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
+                            <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
+                                Đăng xuất</a>
                         </ul>
                     </div>
                 </div>

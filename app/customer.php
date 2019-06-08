@@ -12,15 +12,15 @@ class customer extends Model
      * Kiem tra quyen co phai la admin hay khong
      * @return bool
      */
-    public function checkRoleAdmin()
-    {
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-        $role = $_SESSION['customer'][0]['cus_role'];
-        if ($role == 1)
-            return 1;
-        return 0;
-    }
+//    public function checkRoleAdmin()
+//    {
+//        if (session_status() == PHP_SESSION_NONE) {
+//            session_start();
+//        }
+//        $role = $_SESSION['customer'][0]['cus_role'];
+//        if ($role == 1)
+//            return 1;
+//        return 0;
+//    }
 
 }

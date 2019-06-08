@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     $bestsale=  \App\Products::where('best_sale', '1')->get();
-    print_r(count($bestsale));
+//    print_r(count($bestsale));
     return view('trangchu.index', compact('bestsale'));
 }); //bien dau tien ddos laf duong dan
 
@@ -123,10 +123,10 @@ Route::get('admin/product', 'IndexController@getProduct' )->name('admin.product'
 
 
 Route::post('admin/product/addProduct','IndexController@uploadImages')->name('admin.uploadImages');
-Route::get('ConfirmInvoice','AdminController@ConfirmInvoice')->name('confirm.invoice');
-Route::get('CancelInvoice','AdminController@CancelInvoice')->name('cancel.invoice');
+Route::get('ConfirmInvoice','CustomerController@ConfirmInvoice')->name('confirm.invoice');
+Route::get('CancelInvoice','CustomerController@CancelInvoice')->name('cancel.invoice');
 
-Route::get('testrole','AdminController@testrole');
+//Route::get('testrole','AdminController@testrole');
 
 
 Route::get('admin/list_product_table','IndexController@get_list_product')->name('list_product');
