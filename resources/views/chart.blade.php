@@ -115,7 +115,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 },
 
                 series: [{
-                    name: "Số lượng",
+                    name: "Trị giá",
                     type: 'column',
                     colorByPoint: true,
                     data: listOfValue,
@@ -161,7 +161,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         },
 
                         series: [{
-                            name: "Số lượng",
+                            name: "Trị giá",
                             type: 'column',
                             colorByPoint: true,
                             data: listOfValue,
