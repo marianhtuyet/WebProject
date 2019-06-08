@@ -13,12 +13,12 @@ class CustomerController extends Controller
         $bestsale = \App\Products::where('best_sale', '1')->get();
         $customer = customer::where('email', $request->email_modal)->first();
 //        echo "$customer";
-
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         if (isset($customer)) {
             if ($customer->password == $request->password_modal) {
-                if (session_status() == PHP_SESSION_NONE) {
-                    session_start();
-                }
+
                 $item_array = array(
                     'cus_id' => $customer->id,
                     'cus_name' => $customer->name,

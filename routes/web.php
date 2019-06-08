@@ -134,3 +134,7 @@ Route::get('admin/list_product','IndexController@getList_product_page')->name('l
 Route::get('admin/detail_product/{id}','IndexController@get_detail_product')->name('detail_product');
 Route::post('admin/update_detail_product/{id}','IndexController@update_detail_product')->name('update_detail_product');
 Route::get('admin/delete_product/{id}','IndexController@delete_product')->name('delete_product');
+
+//Thoongs kee
+Route::get('chart', 'ChartController@orderByYear')->name('chart');
+Route::post('chartByDate', 'ChartController@chartByDate')->name('chartByDate');

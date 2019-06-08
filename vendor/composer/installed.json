@@ -1570,6 +1570,56 @@
         ]
     },
     {
+        "name": "muhamadrezaar/highcharts",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/julles/laravel-highcharts.git",
+            "reference": "efe473406b32e55e8f5eac4f79b6193da0abc013"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/julles/laravel-highcharts/zipball/efe473406b32e55e8f5eac4f79b6193da0abc013",
+            "reference": "efe473406b32e55e8f5eac4f79b6193da0abc013",
+            "shasum": ""
+        },
+        "time": "2018-10-18T14:54:03+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "RezaAr\\Highcharts\\Provider"
+                ],
+                "aliases": {
+                    "Chart": "RezaAr\\Highcharts\\Facade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RezaAr\\Highcharts\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Muhamad Reza Abdul Rohim",
+                "email": "reza.wikrama3@gmail.com"
+            }
+        ],
+        "description": "Laravel Highcarts Packages",
+        "keywords": [
+            "highcharts",
+            "laravel",
+            "packages"
+        ]
+    },
+    {
         "name": "myclabs/deep-copy",
         "version": "1.9.1",
         "version_normalized": "1.9.1.0",

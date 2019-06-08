@@ -79,6 +79,7 @@ class ComposerStaticInit075a562edaad5a7c043c62495ef07787
         ),
         'R' => 
         array (
+            'RezaAr\\Highcharts\\' => 18,
             'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
@@ -260,6 +261,10 @@ class ComposerStaticInit075a562edaad5a7c043c62495ef07787
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'RezaAr\\Highcharts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -435,6 +440,7 @@ class ComposerStaticInit075a562edaad5a7c043c62495ef07787
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AcerController' => __DIR__ . '/../..' . '/app/Http/Controllers/AcerController.php',
+        'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -3356,6 +3362,13 @@ class ComposerStaticInit075a562edaad5a7c043c62495ef07787
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'RezaAr\\Highcharts\\Classes\\Presenters\\ChartPresenter' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Classes/Presenters/ChartPresenter.php',
+        'RezaAr\\Highcharts\\Classes\\Presenters\\ContainerPresenter' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Classes/Presenters/ContainerPresenter.php',
+        'RezaAr\\Highcharts\\Classes\\Presenters\\InitJsPresenter' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Classes/Presenters/InitJsPresenter.php',
+        'RezaAr\\Highcharts\\Classes\\Presenters\\JsTransformerPresenter' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Classes/Presenters/JsTransformerPresenter.php',
+        'RezaAr\\Highcharts\\Facade' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Facade.php',
+        'RezaAr\\Highcharts\\Highcharts' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Highcharts.php',
+        'RezaAr\\Highcharts\\Provider' => __DIR__ . '/..' . '/muhamadrezaar/highcharts/src/Provider.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',

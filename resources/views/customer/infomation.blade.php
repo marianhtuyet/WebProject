@@ -43,7 +43,7 @@ if (session_status() == PHP_SESSION_NONE) {
                             <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
                             <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản phẩm mới</a></li>
                             <li><a href="" class="nav-link" ><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a> </li>
-                            <li><a href="#" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
+                            <li><a href="chart" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
                             <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
                                 Logout</a>
                                 @else
