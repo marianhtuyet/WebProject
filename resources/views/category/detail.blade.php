@@ -19,7 +19,7 @@
 
                             @for($i=1; $i<4;  $i++)
 
-                            <div class="item"> <img src='assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg' alt="" class="img-fluid" style="height: 350px;"></div>
+                                <div class="item"> <img src='assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg' alt="" class="img-fluid" style="height: 350px;"></div>
                             @endfor
                         </div>
                         <div class="ribbon sale">
@@ -49,10 +49,10 @@
                             <p class="text-center buttons">
                                 <a name="add_to_cart" href="{{route('category.basket', [$detail->id])}}" class="btn btn-primary">
                                     <i class="fa fa-shopping-cart"></i>
-                                    Add to cart
+                                    Thêm vào giỏ
                                 </a>
                                 <a href="basket.html" class="btn btn-outline-primary">
-                                    <i class="fa fa-heart"></i> Add to wishlist
+                                    <i class="fa fa-heart"></i> Thêm vào Yêu thích
                                 </a>
                             </p>
 
@@ -64,12 +64,12 @@
                     {{--mo ta san pham--}}
                     {!! $detail->description !!}
 
-                    </div>
-
                 </div>
 
             </div>
+
         </div>
+    </div>
     </div>
 
 

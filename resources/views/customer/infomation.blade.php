@@ -20,7 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li aria-current="page" class="breadcrumb-item active">My account</li>
                     </ol>
                 </nav>
@@ -32,29 +32,15 @@ if (session_status() == PHP_SESSION_NONE) {
                 -->
                 <div class="card sidebar-menu">
                     <div class="card-header">
-                        <h3 class="h4 card-title">Customer section</h3>
+                        <h3 class="h4 card-title">Đơn hàng của tôi</h3>
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">
-                            @if( $_SESSION["customer"][0]["cus_role"]==1)
-                            <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
-                                My orders</a>
+                            <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>Đơn hàng</a>
                             {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
-                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
-                            <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản phẩm mới</a></li>
-                            <li><a href="" class="nav-link" ><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a> </li>
-                            <li><a href="chart" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
+                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> Tài khoản</a>
                             <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
-                                Logout</a>
-                                @else
-                                {{--<a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>--}}
-                                    {{--My orders</a>--}}
-                                {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
-                                <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
-                                <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
-                                    Logout</a>
-
-                                @endif
+                                Đăng xuất</a>
                         </ul>
                     </div>
                 </div>
@@ -64,18 +50,17 @@ if (session_status() == PHP_SESSION_NONE) {
             </div>
             <div class="col-lg-9">
                 <div class="box">
-                    <h1>My account</h1>
-                    <p class="lead">Change your personal details or your password here.</p>
-                    <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas.</p>
-                    <h3>Change password</h3>
+                    <h1>Tài khoản</h1>
+                    <p class="lead">Đổi mật khẩu hoặc thông tin cá nhân tại đây!</p>
+                    <p class="text-muted">Đổi mật khẩu hoặc thông tin cá nhân tại đây!</p>
+                    <h3>Đổi mật khẩu</h3>
                     <form method="post" action="{{route('customer.changepass')}}" >
                         {{csrf_field()}}
-                    {{--<form>--}}
+                        {{--<form>--}}
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="password_old">Old password</label>
+                                    <label for="password_old">Mật khẩu cũ</label>
                                     <input class="hidden" id="password_old_val"
                                            value="{{$_SESSION["customer"][0]["cus_password"]}}">
                                     <input id="password_old" type="password" class="form-control"
@@ -86,13 +71,13 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="password_1">New password</label>
+                                    <label for="password_1">Mật khẩu mới</label>
                                     <input id="password_1" type="password" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="form-group">
-                                    <label for="password_2">Retype new password</label>
+                                    <label for="password_2">Xác nhận mật khẩu mới</label>
                                     <input id="password_2" name="password_2" type="password" class="form-control"
                                            onblur="CheckPassTrue()">
                                 </div>
@@ -106,18 +91,18 @@ if (session_status() == PHP_SESSION_NONE) {
                         </div>
                         <!-- /.row-->
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save new password
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Đổi mật khẩu
                             </button>
                         </div>
                     </form>
-                    <h3 class="mt-5">Personal details</h3>
+                    <h3 class="mt-5">Thông tin cá nhân</h3>
 
                     <form method="post" action="{{route('customer.changeinfo')}}">
                         {{csrf_field()}}
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="fulname">Full name</label>
+                                    <label for="fulname">Họ và tên</label>
                                     <input id="fullname" name="fullname" type="text" class="form-control"
                                            value="{{$_SESSION["customer"][0]["cus_name"]}}">
                                 </div>
@@ -155,7 +140,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="phone">Telephone</label>
+                                    <label for="phone">Điện thoại</label>
                                     <input id="phone" name="phone" type="text" class="form-control"
                                            value="{{$_SESSION["customer"][0]["cus_phone_number"]}}">
                                 </div>
@@ -168,7 +153,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                 </div>
                             </div>
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Thay đổi thông tin
                                 </button>
                             </div>
                         </div>

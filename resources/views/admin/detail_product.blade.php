@@ -12,7 +12,7 @@
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li aria-current="page" class="breadcrumb-item active">Liên hệ</li>
                     </ol>
                 </nav>
@@ -29,15 +29,15 @@
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">
                             <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
-                                My orders</a>
+                                Đơn hàng</a>
                             {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
-                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
+                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> Tài khoản</a>
                             <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản
                                     phẩm mới</a></li>
                             <li><a href="" class="nav-link"><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a></li>
                             <li><a href="#" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
                             <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
-                                Logout</a>
+                                Đăng xuất</a>
                         </ul>
                     </div>
                 </div>

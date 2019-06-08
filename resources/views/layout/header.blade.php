@@ -1,9 +1,9 @@
 <?php
 if(session_status() == PHP_SESSION_NONE)
-    {
-        session_start();
+{
+    session_start();
 
-    }
+}
 
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -76,7 +76,7 @@ if(session_status() == PHP_SESSION_NONE)
     <div class="container"><a href="#" class="navbar-brand home"><img
                     src="assets/img_new/logo.png" alt="3 O'clock logo" class="d-none d-md-inline-block">
             <img src="assets/img_new/logo.png" alt="3 O'Clock logo" class="d-inline-block d-md-none">
-            <span class="sr-only">3 O'clock - go to homepage</span></a>
+            <span class="sr-only">3 O'clock - quay lại trang chủ</span></a>
         <div class="navbar-buttons">
             <button type="button" data-toggle="collapse" data-target="#navigation"
                     class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i

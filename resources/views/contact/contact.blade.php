@@ -12,7 +12,7 @@
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li aria-current="page" class="breadcrumb-item active">Liên hệ</li>
                     </ol>
                 </nav>
@@ -24,7 +24,7 @@
                 -->
                 <div class="card sidebar-menu mb-4">
                     <div class="card-header">
-                        <h3 class="h4 card-title">Pages</h3>
+                        <h3 class="h4 card-title">Trang</h3>
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">

@@ -29,15 +29,15 @@ if(session_status() == PHP_SESSION_NONE)
                     <form method="post" action="{{route('checkout2.post')}}">
                         {{csrf_field()}}
                         <h1>Thanh toán - Địa chỉ</h1>
-                        
+
                         <div class="nav flex-column flex-sm-row nav-pills"><a href="{{route('checkout1.get')}}" class="nav-link flex-sm-fill text-sm-center active">
                                 <i class="fa fa-map-marker">
                                 </i>Địa chỉ</a><a href="{{route('checkout2.get')}}" class="nav-link flex-sm-fill text-sm-center"> <i class="fa fa-truck">
                                 </i>Phương thức giao hàng</a>
-                                <a href="{{route('checkout3.get')}}" class="nav-link flex-sm-fill text-sm-center "> <i class="fa fa-eye">
+                            <a href="{{route('checkout3.get')}}" class="nav-link flex-sm-fill text-sm-center "> <i class="fa fa-eye">
                                 </i>Review đơn hàng</a>
 
-                            </div>
+                        </div>
 
                         <div class="content py-3">
                             <div class="row">
@@ -47,7 +47,7 @@ if(session_status() == PHP_SESSION_NONE)
                                         <input id="name" name="name" type="text" class="form-control"
                                                @if(isset($_SESSION["invoice"]))
                                                value="{{$_SESSION["invoice"][0]["invoice_name"]}}"
-                                               @endif>
+                                                @endif>
 
                                     </div>
                                 </div>
@@ -58,18 +58,18 @@ if(session_status() == PHP_SESSION_NONE)
                                     <div class="form-group">
                                         <label for="house_number">Số nhà</label>
                                         <input id="house_number" name="house_number" type="text" class="form-control"
-                                        @if(isset($_SESSION["invoice"]))
-                                             value="{{$_SESSION["invoice"][0]["invoice_house_number"]}}"
-                                             @endif;>
+                                               @if(isset($_SESSION["invoice"]))
+                                               value="{{$_SESSION["invoice"][0]["invoice_house_number"]}}"
+                                               @endif;>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="street">Đường</label>
                                         <input id="street" name="street" type="text" class="form-control"
-                                            @if(isset($_SESSION["invoice"]))
-                                                 value="{{$_SESSION["invoice"][0]["invoice_street"]}}"
-                                                 @endif;>
+                                               @if(isset($_SESSION["invoice"]))
+                                               value="{{$_SESSION["invoice"][0]["invoice_street"]}}"
+                                               @endif;>
                                     </div>
                                 </div>
                             </div>
@@ -79,9 +79,9 @@ if(session_status() == PHP_SESSION_NONE)
                                     <div class="form-group">
                                         <label for="city">Thành phố</label>
                                         <input id="city" name="city" type="text" class="form-control"
-                                        @if(isset($_SESSION["invoice"]))
-                                             value="{{$_SESSION["invoice"][0]["invoice_city"]}}"
-                                             @endif;
+                                               @if(isset($_SESSION["invoice"]))
+                                               value="{{$_SESSION["invoice"][0]["invoice_city"]}}"
+                                               @endif;
                                         >
                                     </div>
                                 </div>
@@ -89,8 +89,8 @@ if(session_status() == PHP_SESSION_NONE)
                                     <div class="form-group">
                                         <label for="phone_number">Số điện thoại</label>
                                         <input id="phone_number" name="phone_number" type="text" class="form-control"@if(isset($_SESSION["invoice"]))
-                                             value="{{$_SESSION["invoice"][0]["invoice_phone_number"]}}"
-                                             @endif;>
+                                        value="{{$_SESSION["invoice"][0]["invoice_phone_number"]}}"
+                                               @endif;>
                                     </div>
                                 </div>
                                 <!-- <div class="col-md-12 col-lg-4">
@@ -100,7 +100,7 @@ if(session_status() == PHP_SESSION_NONE)
                                        >
                                     </div>
                                 </div> -->
-                        <input type="hidden" name="total" value="{{$g_total}}">
+                                <input type="hidden" name="total" value="{{$g_total}}">
                             </div>
                             <!-- /.row-->
                         </div>
@@ -128,7 +128,7 @@ if(session_status() == PHP_SESSION_NONE)
                                         @if(isset($_SESSION["invoice"]))
                                             {{number_format($_SESSION["invoice"][0]["invoice_total"],0)}}
                                         @else
-                                        {{number_format($g_total,0)}}
+                                            {{number_format($g_total,0)}}
                                         @endif
                                     </th>
 
@@ -149,7 +149,7 @@ if(session_status() == PHP_SESSION_NONE)
                                         @else
                                             {{number_format($g_total + 20000,0)}}
                                         @endif
-                                       </th>
+                                    </th>
                                 </tr>
                                 </tbody>
                             </table>

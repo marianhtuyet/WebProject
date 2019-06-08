@@ -16,8 +16,8 @@
                         <h1>Shopping cart</h1>
                         <?php $total = 0; ?>
                         @if(!empty($_SESSION["shopping_cart"]))
-                            <p class="text-muted">You currently have <?php echo count($_SESSION["shopping_cart"])?>
-                                item(s) in your cart.</p>
+                            <p class="text-muted">Bạn đang có <?php echo count($_SESSION["shopping_cart"])?>
+                                sản phẩm trong giỏ hàng.</p>
 
                             <div class="table-responsive">
                                 <table class="table">
@@ -71,11 +71,11 @@
                             <div class="box-footer d-flex justify-content-between flex-column flex-lg-row">
                                 <div class="left"><a href="{{route('acer.category_acer_nitro')}}"
                                                      class="btn btn-outline-secondary"><i
-                                                class="fa fa-chevron-left"></i> Continue shopping</a></div>
+                                                class="fa fa-chevron-left"></i> Tiếp tục mua sắm</a></div>
                                 <div class="right">
-                                    <a href="{{route('basket.get')}}" class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart
+                                    <a href="{{route('basket.get')}}" class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Cập nhật giỏ hàng
                                     </a>
-                                    <a href="{{route('checkout1.get', [$total])}}" class="btn btn-primary">Proceed to checkout <i
+                                    <a href="{{route('checkout1.get', [$total])}}" class="btn btn-primary">Tiếp tục xử lý đơn hàng<i
                                                 class="fa fa-chevron-right"></i></a>
                                 </div>
                             </div>

@@ -12,7 +12,7 @@
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li aria-current="page" class="breadcrumb-item active">Acer</li>
                     </ol>
                 </nav>
@@ -49,9 +49,9 @@
                                         {{$value->cost}} đ
                                     </p>
                                     <p class="buttons"><a href="product/detail"
-                                                          class="btn btn-outline-secondary">View detail</a><a
+                                                          class="btn btn-outline-secondary">Xem chi tiết</a><a
                                                 href="basket.html" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                                                    class="fa fa-shopping-cart"></i>Thêm vào giỏ</a></p>
                                 </div>
                                 <!-- /.text-->
                                 <div class="ribbon sale">
@@ -77,19 +77,17 @@
                 <!-- /.products-->
 
                 <div class="pages">
-                    <p class="loadMore"><a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i>
-                            Load more</a></p>
                     <nav aria-label="Page navigation example" class="d-flex justify-content-center">
                         <ul class="pagination">
                             <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span
-                                            aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                                            aria-hidden="true">«</span><span class="sr-only">Trước </span></a></li>
                             <li class="page-item active"><a href="#" class="page-link">1</a></li>
                             <li class="page-item"><a href="#" class="page-link">2</a></li>
                             <li class="page-item"><a href="#" class="page-link">3</a></li>
                             <li class="page-item"><a href="#" class="page-link">4</a></li>
                             <li class="page-item"><a href="#" class="page-link">5</a></li>
                             <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span
-                                            aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                                            aria-hidden="true">»</span><span class="sr-only">Tiếp theo</span></a></li>
                         </ul>
                     </nav>
                 </div>

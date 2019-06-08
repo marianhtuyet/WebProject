@@ -12,7 +12,7 @@
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li aria-current="page" class="breadcrumb-item active">Thanh toán - Review đơn hàng</li>
                     </ol>
                 </nav>
@@ -35,10 +35,10 @@
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                        <th colspan="2">Product</th>
-                                        <th>Quantity</th>
-                                        <th>Unit price</th>
-                                        <th >Total</th>
+                                        <th colspan="2">Sản phẩm</th>
+                                        <th>Số lượng</th>
+                                        <th>Đơn giá</th>
+                                        <th >Tổng tiền</th>
                                     </tr>
                                     <?php $total = 0?>
                                     @foreach ($_SESSION["shopping_cart"] as $keys => $value)
@@ -69,7 +69,7 @@
                                     @endforeach
 
                                     <tr>
-                                        <td colspan="4" align="right">Total</td>
+                                        <td colspan="4" align="right">Tổng tiền</td>
                                         <td class="grand_total">
                                             {{number_format($total, 0)}} vnd
                                         </td>

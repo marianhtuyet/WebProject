@@ -1,8 +1,8 @@
 <?php
 
 if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
+    session_start();
+}
 
 ?>
 @extends('layout.index')
@@ -19,7 +19,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Trang</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li aria-current="page" class="breadcrumb-item active">Thanh toán -Giao hàng</li>
                     </ol>
                 </nav>
@@ -42,9 +42,9 @@ if (session_status() == PHP_SESSION_NONE) {
                                         <p>Nhận hàng sau 1-2 ngày.</p>
                                         <div class="box-footer text-center">
                                             <input type="radio" name="delivery" value="1"
-                                              @if(isset($_SESSION["invoice"]) && $_SESSION["invoice"][0]["invoice_method_delivery"]==1 )
-                                           checked="checked"
-                                             @endif;>
+                                                   @if(isset($_SESSION["invoice"]) && $_SESSION["invoice"][0]["invoice_method_delivery"]==1 )
+                                                   checked="checked"
+                                                   @endif;>
                                         </div>
                                     </div>
                                 </div>
@@ -54,14 +54,14 @@ if (session_status() == PHP_SESSION_NONE) {
                                         <p>Nhận hàng sau 5 - 10 ngày.</p>
                                         <div class="box-footer text-center">
                                             <input type="radio" name="delivery" value="2"
-                                            @if(isset($_SESSION["invoice"]) && $_SESSION["invoice"][0]["invoice_method_delivery"]==2 )
-                                           checked="checked"
-                                             @endif;>
+                                                   @if(isset($_SESSION["invoice"]) && $_SESSION["invoice"][0]["invoice_method_delivery"]==2 )
+                                                   checked="checked"
+                                                   @endif;>
                                         </div>
                                     </div>
                                 </div>
 
-                                
+
                             </div>
                         </div>
                         <div class="box-footer d-flex justify-content-between"><a href="{{route('checkout1.get')}}" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i>Back to address</a>

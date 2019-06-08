@@ -20,8 +20,8 @@ if (session_status() == PHP_SESSION_NONE) {
                 <!-- breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li aria-current="page" class="breadcrumb-item active">My order</li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li aria-current="page" class="breadcrumb-item active">Đơn hàng</li>
 
                     </ol>
                 </nav>
@@ -33,20 +33,20 @@ if (session_status() == PHP_SESSION_NONE) {
                 -->
                 <div class="card sidebar-menu">
                     <div class="card-header">
-                        <h3 class="h4 card-title">Customer section</h3>
+                        <h3 class="h4 card-title">Đơn hàng của tôi</h3>
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills flex-column">
                             <a href="{{route('customer.invoice')}}" class="nav-link active"><i class="fa fa-list"></i>
-                                My orders</a>
+                                Đơn hàng</a>
                             {{--<a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a>--}}
-                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> My account</a>
+                            <a href="{{route('customer.info')}}" class="nav-link"><i class="fa fa-user"></i> Tài khoản</a>
                             <li><a href="{{route('admin.product')}}" class="nav-link"><i class="fa fa-plus-square "></i>Sản
                                     phẩm mới</a></li>
                             <li><a href="" class="nav-link"><i class="fa fa-list-alt"></i>Danh sách sản phẩm</a></li>
                             <li><a href="#" class="nav-link"><i class="fa fa-bar-chart "></i>Thống kê</a></li>
                             <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
-                                Logout</a>
+                                Đăng xuất</a>
                         </ul>
                     </div>
                 </div>
@@ -56,8 +56,8 @@ if (session_status() == PHP_SESSION_NONE) {
             </div>
             <div id="customer-orders" class="col-lg-9">
                 <div class="box">
-                    <h1>My orders</h1>
-                    <p class="lead">Your orders on one place.</p>
+                    <h1>Đơn hàng của tôi</h1>
+                    <p class="lead">Xử lý đơn hàng.</p>
                     {{--<p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>--}}
                     <hr>
                     <div class="table-responsive">
