@@ -343,9 +343,9 @@ class IndexController extends Controller
             $invoice_new->total = $_SESSION["invoice"][0]["invoice_total"];
             $invoice_new->state = 1;
             if (isset($_SESSION["customer"])) {
-                $invoice->id_customer = $_SESSION["customer"][0]["cus_id"];
+                $invoice_new->id_customer = $_SESSION["customer"][0]["cus_id"];
             }
-            $invoice->id_customer = 0;
+            $invoice_new->id_customer = 0;
 
             $invoice_new->method_delivery = $_SESSION["invoice"][0]["invoice_method_delivery"];
             $invoice_new->ship = 20000;
@@ -354,7 +354,7 @@ class IndexController extends Controller
             $invoice_new->save();
 
         }
-        print_r($_SESSION["invoice"][0]);
+//        print_r($_SESSION["invoice"][0]);
         echo "<script>alert('Đã lưu đơn hàng. Xin cảm ơn!')</script>";
         $bestsale = \App\Products::where('best_sale', '1')->get();
         return view('trangchu.index', compact('bestsale'));
