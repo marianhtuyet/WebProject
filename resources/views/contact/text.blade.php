@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <!-- *** PAGES MENU END ***-->
-                <div class="banner"><img src="img_new/company4.jpg" alt="sales 2014" class="img-fluid"></div>
+                <div class="banner"><img src="assets/img_new/company4.jpg" alt="sales 2014" class="img-thumbnail"></div>
             </div>
             <div class="col-lg-9">
                 <div id="text-page" class="box">
@@ -57,15 +57,15 @@
                     <h2>Hình ảnh</h2>
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="text-center"><img src="img_new/company1.jpg" alt="" class="rounded-circle img-fluid"></p>
+                            <p class="text-center"><img src="assets/img_new/company1.jpg" alt="" class="rounded-circle img-thumbnail"></p>
                             <p class="text-center">Hà Nội</p>
                         </div>
                         <div class="col-md-4">
-                            <p class="text-center"><img src="img_new/company2.jpg" alt="" class="img-thumbnail img-fluid"></p>
+                            <p class="text-center"><img src="assets/img_new/company2.jpg" alt="" class="img-thumbnail img-thumbnail"></p>
                             <p class="text-center">Đà Nẵng</p>
                         </div>
                         <div class="col-md-4">
-                            <p class="text-center"><img src="img_new/company3.jpg" alt="" class="img-circle img-fluid"></p>
+                            <p class="text-center"><img src="assets/img_new/company3.jpg" alt="" class="img-circle img-thumbnail"></p>
                             <p class="text-center">Tp Hồ Chí Minh</p>
                         </div>
                     </div>

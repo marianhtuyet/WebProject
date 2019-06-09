@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="main-slider" class="owl-carousel owl-theme">
-                    <div class="item"><img src="assets/img_new/banner1.png" alt="" class="img-fluid"></div>
-                    <div class="item"><img src="assets/img_new/banner2.png" alt="" class="img-fluid"></div>
-                    <div class="item"><img src="assets/img_new/banner3.png" alt="" class="img-fluid"></div>
+                    <div class="item"><img src="assets/img_new/banner1.png" alt="" class="img-thumbnail"></div>
+                    <div class="item"><img src="assets/img_new/banner2.png" alt="" class="img-thumbnail"></div>
+                    <div class="item"><img src="assets/img_new/banner3.png" alt="" class="img-thumbnail"></div>
                     <!-- img-fluid tùy chỉnh ảnh sao cho hợp với body web -->
                 </div>
                 <!-- /#main-slider-->

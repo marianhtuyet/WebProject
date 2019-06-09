@@ -399,7 +399,7 @@ class IndexController extends Controller
             $query = $request->get('query');
             $data = Products::where('name', 'LIKE', "%{$query}%")
                 ->get();
-            $output = '<ul class="dropdown-menu" style="display: inline">';
+            $output = '<ul class="dropdown-menu" style="display: inline ;height: 250px;overflow: auto ">';
             foreach($data as $row)
             {
 

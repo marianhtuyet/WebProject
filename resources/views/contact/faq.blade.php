@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <!-- *** PAGES MENU END ***-->
-                <div class="banner"><img src="img_new/company4.jpg" alt="sales 2014" class="img-fluid"></div>
+                <div class="banner"><img src="img_new/company4.jpg" alt="sales 2014" class="img-thumbnail"></div>
             </div>
             <div class="col-lg-9">
                 <div id="contact" class="box">

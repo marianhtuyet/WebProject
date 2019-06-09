@@ -257,12 +257,13 @@ if(session_status() == PHP_SESSION_NONE)
         <form role="search" class="ml-auto">
             {{ csrf_field() }}
             <div class="input-group">
+
                 <input type="text" class="form-control" name="search" id="search_text" autocomplete="off" placeholder="Điền tên sản phẩm">
                 <div class="input-group-append">
                     <!-- input-group-append giúp đoạn text search và nút search dính liền nhau -->
-                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    {{--<button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>--}}
                 </div>
-                <div id="ListProduct">
+                <div id="ListProduct" style="">
                 </div>
 
             </div>
