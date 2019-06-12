@@ -12,6 +12,7 @@ class CustomerController extends Controller
     {
         $bestsale = \App\Products::where('best_sale', '1')->get();
         $customer = customer::where('email', $request->email_modal)->first();
+
 //        echo "$customer";
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
@@ -33,11 +34,12 @@ class CustomerController extends Controller
 //            echo '<script>alert("chhuaw có session")</script>';
                 $_SESSION["customer"][0] = $item_array;
             }
+            if ($_SESSION["customer"][0]['cus_role'] == 1) {
+                $invoice = Invoice::all();
+                return view('admin.order', compact('invoice'));
+            }
         }
-        if ($_SESSION["customer"][0]['cus_role'] == 1) {
-            $invoice = Invoice::where('state', 0)->get();
-            return view('admin.order', compact('invoice'));
-        }
+
         return view('trangchu.index', compact('bestsale'));
     }
 

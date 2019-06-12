@@ -52,6 +52,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                 <a href="{{route('customer.logout')}}" class="nav-link"><i class="fa fa-sign-out"></i>
                                     Đăng xuất</a>
                             @endif
+
                         </ul>
                     </div>
                 </div>
