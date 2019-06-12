@@ -44,7 +44,7 @@ if(session_status() == PHP_SESSION_NONE)
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">Họ tên</label>
-                                        <input id="name" name="name" type="text" class="form-control"
+                                        <input id="name" name="name" type="text" class="form-control" required
                                                @if(isset($_SESSION["invoice"]))
                                                value="{{$_SESSION["invoice"][0]["invoice_name"]}}"
                                                 @endif>
@@ -60,13 +60,14 @@ if(session_status() == PHP_SESSION_NONE)
                                         <input id="house_number" name="house_number" type="text" class="form-control"
                                                @if(isset($_SESSION["invoice"]))
                                                value="{{$_SESSION["invoice"][0]["invoice_house_number"]}}"
-                                               @endif;>
+                                               @endif;
+                                               required >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="street">Đường</label>
-                                        <input id="street" name="street" type="text" class="form-control"
+                                        <input id="street" name="street" type="text" class="form-control" required
                                                @if(isset($_SESSION["invoice"]))
                                                value="{{$_SESSION["invoice"][0]["invoice_street"]}}"
                                                @endif;>
@@ -78,7 +79,7 @@ if(session_status() == PHP_SESSION_NONE)
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="city">Thành phố</label>
-                                        <input id="city" name="city" type="text" class="form-control"
+                                        <input id="city" name="city" type="text" class="form-control" required
                                                @if(isset($_SESSION["invoice"]))
                                                value="{{$_SESSION["invoice"][0]["invoice_city"]}}"
                                                @endif;
@@ -88,7 +89,8 @@ if(session_status() == PHP_SESSION_NONE)
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="phone_number">Số điện thoại</label>
-                                        <input id="phone_number" name="phone_number" type="text" class="form-control"@if(isset($_SESSION["invoice"]))
+                                        <input id="phone_number" name="phone_number" type="text" class="form-control" required
+                                               @if(isset($_SESSION["invoice"]))
                                         value="{{$_SESSION["invoice"][0]["invoice_phone_number"]}}"
                                                @endif;>
                                     </div>

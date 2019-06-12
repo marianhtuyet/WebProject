@@ -367,6 +367,9 @@ class IndexController extends Controller
 //        print_r($_SESSION["invoice"][0]);
         echo "<script>alert('Đã lưu đơn hàng. Xin cảm ơn!')</script>";
         $bestsale = \App\Products::where('best_sale', '1')->get();
+        unset($_SESSION['shopping_cart']);
+        unset($_SESSION['invoice']);
+
         return view('trangchu.index', compact('bestsale'));
 
 
