@@ -68,6 +68,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                 <th>Tổng cộng</th>
                                 <th>Trạng thái</th>
                                 <th>Action</th>
+
                             </tr>
                             </thead>
                             <tbody>
@@ -77,6 +78,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                     <th>{{$value->id}}</th>
                                     <td>{{$value->create_date}}</td>
                                     <td>{{$value->total}}</td>
+
                                     @if($value->state==0)
                                         <td class="status"><span class="badge badge-warning">Chưa xác nhận</span></td>
                                         <td class="btnConfirm"><a class="btn btn-primary btn-sm"
@@ -95,6 +97,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                         <td class="btnConfirm"><a class="btn btn-muted btn-sm" disabled="True">Đã hủy</a></td>
                                         <td></td>
                                     @endif
+                                    <td><a href="{{route('detail.invoice', [$value->id])}}" class="btn btn-primary btn-sm">Chi tiết</a></td>
                                 </tr>
                             @endforeach
 

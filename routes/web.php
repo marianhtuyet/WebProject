@@ -138,3 +138,4 @@ Route::get('admin/delete_product/{id}','IndexController@delete_product')->name('
 //Thoongs kee
 Route::get('chart', 'ChartController@orderByYear')->name('chart');
 Route::post('chartByDate', 'ChartController@chartByDate')->name('chartByDate');
+Route::get('detail_invoice/{id}','CustomerController@getDetailInoice')->name('detail.invoice');

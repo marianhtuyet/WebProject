@@ -14,7 +14,7 @@ class IndexController extends Controller
 
     public function getList()
     {
-            $bestsale = Products::where('best_sale', '1')->get();
+        $bestsale = Products::where('best_sale', '1')->get();
         return view('trangchu.index', compact('bestsale'));
     }
 
@@ -148,10 +148,9 @@ class IndexController extends Controller
         session_start();
 //        echo "$request->id";
         $detail = Products::where('id', $request->id)->first();
-        $price= $detail->cost;
+        $price = $detail->cost;
 
-        if($detail->discount > 1)
-        {
+        if ($detail->discount > 1) {
             $price = $detail->discount;
 
         }
@@ -240,13 +239,18 @@ class IndexController extends Controller
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
-        if(isset($_SESSION["invoice"]))
-            $g_total = $_SESSION["invoice"][0]["invoice_total"];
-        else
-        $g_total = $request->total;
+        if (isset($_SESSION["customer"])) {
+            if (isset($_SESSION["invoice"]))
+                $g_total = $_SESSION["invoice"][0]["invoice_total"];
+            else
+                $g_total = $request->total;
+            return view('checkout.checkout1', compact('g_total'));
+        } else
+            echo '<script>alert("Bạn phải đăng nhập trước")</script>';
+        return view('category.basket');
 //        print_r($_SESSION["invoice"][0]["invoice_name"]);
 //        lay gia tri tong hoa don
-        return view('checkout.checkout1', compact('g_total'));
+
     }
 
 
@@ -352,16 +356,23 @@ class IndexController extends Controller
             $invoice_new->create_date = date('Y-m-d');
             $invoice_new->total = $_SESSION["invoice"][0]["invoice_total"];
             $invoice_new->state = 0;
-            if (isset($_SESSION["customer"])) {
-                $invoice_new->id_customer = $_SESSION["customer"][0]["cus_id"];
-            }
-            $invoice_new->id_customer = 0;
-
+            $invoice_new->id_customer = $_SESSION["customer"][0]["cus_id"];
             $invoice_new->method_delivery = $_SESSION["invoice"][0]["invoice_method_delivery"];
             $invoice_new->ship = 20000;
             $invoice_new->district = 'null';
             $invoice_new->phone_number = $_SESSION["invoice"][0]["invoice_phone_number"];
             $invoice_new->save();
+
+//            $_SESSION['shopping_cart']
+            $count = count($_SESSION["shopping_cart"]);
+            for ($i = 0; $i < $count; $i++) {
+                $detail = new detail_invoice();
+                $detail->id_invoice = $invoice_new->id;
+                $detail->id_product = $_SESSION["shopping_cart"][$i]["item_id"];
+                $detail->quality = $_SESSION["shopping_cart"][$i]["item_quality"];
+                $detail->save();
+            }
+
 
         }
 //        print_r($_SESSION["invoice"][0]);
@@ -393,11 +404,13 @@ class IndexController extends Controller
     public function getBestSale()
     {
 
-}
+    }
+
     public function getAdmin()
     {
         return view('admin.password');
     }
+
     public function getProduct()
     {
         return view('admin.product');
@@ -406,18 +419,16 @@ class IndexController extends Controller
 
     public function getDataSearch(Request $request)
     {
-        if($request->get('query'))
-        {
+        if ($request->get('query')) {
 
             $query = $request->get('query');
             $data = Products::where('name', 'LIKE', "%{$query}%")
                 ->get();
             $output = '<ul class="dropdown-menu" style="display: inline ;height: 250px;overflow: auto ">';
-            foreach($data as $row)
-            {
+            foreach ($data as $row) {
 
                 $output .= '
-       <li><a href="'.route('category.detail', [$row->id]).'">'.$row->name.'</a></li>
+       <li><a href="' . route('category.detail', [$row->id]) . '">' . $row->name . '</a></li>
        ';
             }
             $output .= '</ul>';
@@ -427,11 +438,9 @@ class IndexController extends Controller
     //// upload single file
 
 
-
-
-
 // upload multiple files
-    function uploadImages(){
+    function uploadImages()
+    {
         if (isset($_POST["submit"])) {
             // image mime to be checked
             $imagetype = array(image_type_to_mime_type(IMAGETYPE_GIF), image_type_to_mime_type(IMAGETYPE_JPEG),
@@ -439,24 +448,24 @@ class IndexController extends Controller
             $FOLDER = "../public/assets/img/";
             $myfile = $_FILES["file"];
             $select_val = $_POST['select-nho'];
-            $max = Products::where('id_product',$select_val )->max('id_type');
-            $max +=1;
+            $max = Products::where('id_product', $select_val)->max('id_type');
+            $max += 1;
 //            echo "$max";
 //            echo "$select_val";
             $keepName = false; // change this for file name.
             $response = array();
-            $k=1;
+            $k = 1;
             for ($i = 0; $i < count($_FILES["file"]["name"]); $i++) {
                 if ($myfile["name"][$i] <> "" && $myfile["error"][$i] == 0) {
                     // file is ok
-                    if (in_array($myfile["type"][$i],$imagetype)) {
+                    if (in_array($myfile["type"][$i], $imagetype)) {
                         //Set file name
                         if ($keepName) {
                             $file_name = $myfile["name"][$i];
                         } else {
                             // get extention and set unique name
 //                            $file_extention = @strtolower(@end(@explode(".", $myfile["name"][$i])));
-                            $file_name =$select_val.'_'.$max.'_'.$k . '.' . 'jpg'; // Thư mục sẽ lưu file
+                            $file_name = $select_val . '_' . $max . '_' . $k . '.' . 'jpg'; // Thư mục sẽ lưu file
                         }
                         if (move_uploaded_file($myfile["tmp_name"][$i], $FOLDER . $file_name) === FALSE) {
                             //Set Original File Name if Upload Error
@@ -479,7 +488,7 @@ class IndexController extends Controller
             $product->name = $_POST['nameproduct'];
             $product->cost = $_POST['price'];
             $product->quantity = $_POST['quantity'];
-            $product->description =$_POST['describe'];
+            $product->description = $_POST['describe'];
             $product->id_type = $max;
             $product->id_product = $select_val;
 //            echo "$product";
@@ -593,10 +602,12 @@ class IndexController extends Controller
             return view('admin.list_product');
         }
     }
-    public function delete_product($id){
+
+    public function delete_product($id)
+    {
         Products::find($id)->delete();
 
-       return redirect()->back();
+        return redirect()->back();
 
     }
 }

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\customer;
+use App\detail_invoice;
 use App\Invoice;
 use Illuminate\Http\Request;
+use DB;
 
 class CustomerController extends Controller
 {
@@ -183,5 +185,17 @@ class CustomerController extends Controller
             $invoice->save();
         }
     }
+public  function getDetailInoice(Request $request)
+{
+    $invoice = Invoice::find($request->id);
+    $detail = DB::table('detail_invoices')
+        ->join('products', 'products.id', '=', 'detail_invoices.id_product')
+        ->join('invoices', 'invoices.id', '=', 'detail_invoices.id_invoice')
+        ->where('detail_invoices.id_invoice','=', $request->id)
+        ->get();
+
+    return view('admin.detail_invoice', compact('detail', 'invoice'));
+}
+
 
 }
