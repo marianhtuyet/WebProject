@@ -19,7 +19,7 @@
 
                             @for($i=1; $i<4;  $i++)
 
-                                <div class="item"> <img src='assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg' alt="" class="img-fluid" style="height: 350px;"></div>
+                                <div class="item"> <img src='assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg' alt="" class="img-thumbnail" style="height: 350px;"></div>
                             @endfor
                         </div>
                         <div class="ribbon sale">
@@ -34,7 +34,7 @@
                         <!-- /.ribbon-->
                         <div data-slider-id="1" class="owl-thumbs">
                             @for($i=1; $i<4;  $i++)
-                                <button class="owl-thumb-item"><img src="assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg" alt="" class="img-fluid"></button>
+                                <button class="owl-thumb-item"><img src="assets/img/{{$detail->id_product}}_{{$detail->id_type}}_<?php echo $i?>.jpg" alt="" class="img-thumbnail"></button>
                             @endfor
                         </div>
                     </div>
@@ -43,17 +43,21 @@
 
                             <h3 class="text-center">{{$detail->name}}</h3>
                             <p class="goToDescription"><a href="#details" class="scroll-to">Kéo xuống để xem thông tin chi tiết sản phẩm hoặc nhấp tại đây!</a></p>
-                            <p class="price">{{number_format($detail->cost, 0)}}đ</p>
 
-
+                            @if($detail->discount > 0 )
+                                <del><p class="price">{{number_format($detail->cost, 0)}}đ</p></del>
+                                <p class="price">{{number_format($detail->discount, 0)}}đ</p>
+                            @else
+                                <p class="price">{{number_format($detail->cost, 0)}}đ</p>
+                            @endif
                             <p class="text-center buttons">
                                 <a name="add_to_cart" href="{{route('category.basket', [$detail->id])}}" class="btn btn-primary">
                                     <i class="fa fa-shopping-cart"></i>
                                     Thêm vào giỏ
                                 </a>
-                                <a href="basket.html" class="btn btn-outline-primary">
-                                    <i class="fa fa-heart"></i> Thêm vào Yêu thích
-                                </a>
+                                {{--<a href="basket.html" class="btn btn-outline-primary">--}}
+                                    {{--<i class="fa fa-heart"></i> Thêm vào Yêu thích--}}
+                                {{--</a>--}}
                             </p>
 
                         </div>

@@ -44,10 +44,12 @@
                                                                                                             alt=""   class="img-fluid"></a>
                                 <div class="text">
                                     <h3><a href="{{route('category.detail', [$value->id])}}">{{$value->name}}</a></h3>
-                                    <p class="price">
-                                        {{--<del>$value->cost đ</del>--}}
-                                        {{number_format($value->cost, 0)}}đ
-                                    </p>
+                                    @if($value->discount > 0 )
+                                        <del><p class="price">{{number_format($value->cost, 0)}}đ</p></del>
+                                        <p class="price">{{number_format($value->discount, 0)}}đ</p>
+                                    @else
+                                        <p class="price">{{number_format($value->cost, 0)}}đ</p>
+                                    @endif
                                     <p class="buttons"><a href="{{route('category.detail', [$value->id])}}"
                                                           class="btn btn-outline-secondary">Xem chi tiết</a><a
                                                 href="{{route('category.basket', [$value->id])}}" class="btn btn-primary"><i
@@ -81,14 +83,14 @@
                     {{--Load more</a></p>--}}
                     <nav aria-label="Page navigation example" class="d-flex justify-content-center">
                         <ul class="pagination">
-                            <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span
+                            <li class="page-item"><a href="" aria-label="Previous" class="page-link"><span
                                             aria-hidden="true">«</span><span class="sr-only">Trước</span></a></li>
                             <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                            <li class="page-item"><a href="#" class="page-link">2</a></li>
-                            <li class="page-item"><a href="#" class="page-link">3</a></li>
-                            <li class="page-item"><a href="#" class="page-link">4</a></li>
-                            <li class="page-item"><a href="#" class="page-link">5</a></li>
-                            <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span
+                            <li class="page-item"><a href="" class="page-link">2</a></li>
+                            <li class="page-item"><a href="" class="page-link">3</a></li>
+                            <li class="page-item"><a href="" class="page-link">4</a></li>
+                            <li class="page-item"><a href="" class="page-link">5</a></li>
+                            <li class="page-item"><a href="" aria-label="Next" class="page-link"><span
                                             aria-hidden="true">»</span><span class="sr-only">Tiếp theo</span></a></li>
                         </ul>
                     </nav>

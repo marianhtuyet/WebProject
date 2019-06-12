@@ -44,10 +44,12 @@
                                                                                                             alt=""   class="img-fluid"></a>
                                 <div class="text">
                                     <h3><a href="{{route('category.detail', [$value->id])}}">{{$value->name}}</a></h3>
-                                    <p class="price">
-                                        {{--<del>$value->cost đ</del>--}}
-                                        {{number_format($value->cost, 0)}}đ
-                                    </p>
+                                    @if($value->discount > 0 )
+                                        <del><p class="price">{{number_format($value->cost, 0)}}đ</p></del>
+                                        <p class="price">{{number_format($value->discount, 0)}}đ</p>
+                                    @else
+                                        <p class="price">{{number_format($value->cost, 0)}}đ</p>
+                                    @endif
                                     <p class="buttons"><a href="{{route('category.detail', [$value->id])}}"
                                                           class="btn btn-outline-secondary">View detail</a><a
                                                 href="{{route('category.basket', [$value->id])}}" class="btn btn-primary"><i

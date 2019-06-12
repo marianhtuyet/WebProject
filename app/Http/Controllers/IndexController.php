@@ -146,16 +146,26 @@ class IndexController extends Controller
 
 //    khi nhân nút này nếu ko có thì nhảy xuống else
         session_start();
-        echo "$request->id";
+//        echo "$request->id";
         $detail = Products::where('id', $request->id)->first();
+        $price= $detail->cost;
+
+        if($detail->discount > 1)
+        {
+            $price = $detail->discount;
+
+        }
+//        echo $price;
         if (isset($_SESSION["shopping_cart"])) {
             $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
             if (!in_array($request->id, $item_array_id)) {
                 $count = count($_SESSION["shopping_cart"]);
+
+                echo $price;
                 $item_array = array(
                     'item_id' => $request->id,
                     'item_name' => $detail->name,
-                    'item_cost' => $detail->cost,
+                    'item_cost' => $price,
                     'item_quality' => 1,
                     'item_img' => $detail->id_product . '_' . $detail->id_type,
 
@@ -176,7 +186,7 @@ class IndexController extends Controller
             $item_array = array(
                 'item_id' => $request->id,
                 'item_name' => $detail->name,
-                'item_cost' => $detail->cost,
+                'item_cost' => $price,
                 'item_quality' => 1,
                 'item_img' => $detail->id_product . '_' . $detail->id_type,
             );
@@ -341,7 +351,7 @@ class IndexController extends Controller
             $invoice_new->city = $_SESSION["invoice"][0]["invoice_city"];
             $invoice_new->create_date = date('Y-m-d');
             $invoice_new->total = $_SESSION["invoice"][0]["invoice_total"];
-            $invoice_new->state = 1;
+            $invoice_new->state = 0;
             if (isset($_SESSION["customer"])) {
                 $invoice_new->id_customer = $_SESSION["customer"][0]["cus_id"];
             }
