@@ -88,10 +88,10 @@
                         <a href="{{route('category.detail', [$value->id])}}" class="invisible"><img src="assets/img/{{$value->id_product}}_{{$key+1}}_1.jpg"
                                                                                          alt="" class="img-fluid"></a>
                         <div class="text">
-                            <h3><a href="{{route('category.detail', [$value->id])}}">Laptop Asus TUF Gaming FX505GM-BN117T</a></h3>
+                            <h3><a href="{{route('category.detail', [$value->id])}}">{{$value->name}}</a></h3>
                             <p class="price">
                                 <del></del>
-                                28.490.000đ
+                                {{$value->cost}}
                                 <!-- <del> gạch ngang và làm mờ chữ -->
                             </p>
                         </div>
